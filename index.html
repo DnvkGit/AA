@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aksharaala Amarika - Jumble Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Aksharaala Amarika — Prototype</h1><div class="sub">Tap / Click only — mobile-friendly</div></header>
+
+  <main class="container">
+    <section class="left">
+      <h2>Jumbles</h2>
+      <div id="jumblesList" class="jumblesList"></div>
+    </section>
+
+    <section class="center">
+      <div class="cartoonBox" id="cartoonBox">
+        <img id="cartoonImg" src="img/c001.jpg" alt="cartoon" />
+      </div>
+      <div id="captionArea" class="captionArea">
+        <div class="captionLabel">Caption</div>
+        <div id="captionCells" class="captionCells"></div>
+      </div>
+		<div id="captionControls" class="controls" style="display:none;">
+		  <button id="resetCaptionBtn">Reset Caption</button>
+		  <button id="confirmCaptionBtn">Confirm Caption</button>
+		</div>
+
+      <div class="workArea" id="workArea" hidden>
+        <div class="workTitle">Work Area</div>
+        <div id="pool" class="pool"></div>
+        <div id="answerRow" class="answerRow"></div>
+        <div class="controls">
+          <button id="resetBtn">Reset</button>
+          <button id="confirmBtn">Confirm</button>
+        </div>
+        <div id="hint" class="hint"></div>
+      </div>
+
+      <div class="hlArea" id="hlArea">
+        <div class="hlTitle">HL Syllables (collected)</div>
+        <div id="hlPool" class="hlPool"></div>
+      </div>
+    </section>
+
+    <section class="right">
+      <h2>Info</h2>
+      <div id="info" class="info">Select a Jumble to start.</div>
+    </section>
+  </main>
+   <script src="script.js"></script>
+
+ <!-- <footer>Tip: run via a local server: <code>python -m http.server</code> and open <code>http://localhost:8000/jumble_puzzle/</code></footer> -->
+
+
+</body>
+</html>
