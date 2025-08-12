@@ -73,7 +73,7 @@ header h1 { margin: 0; font-size: 18px; }
   z-index: 1000;
 }
 .popup-content {
-  background: #b300b3; padding: 20px; border-radius: 10px; text-align: center;
+  background: rgba(0,0,0,0.5) ; padding: 20px; border-radius: 10px; text-align: center;
   font-size: 18px; position: relative;
 }
 .stars {
