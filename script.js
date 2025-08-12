@@ -38,31 +38,58 @@ async function loadSet() {
 
 function enableImageZoomPan() {
   const img = $('#cartoonImg');
-  let zoomed = false;
-  let startX, startY, panX = 0, panY = 0;
+  let overlay, overlayImg;
+  let startX = 0, startY = 0, panX = 0, panY = 0;
 
   img.addEventListener('click', () => {
-    zoomed = !zoomed;
-    img.style.transform = zoomed ? 'scale(2)' : 'scale(1)';
-    if (!zoomed) { panX = panY = 0; img.style.transformOrigin = 'center'; }
+    // Create overlay for fullscreen view
+    overlay = document.createElement('div');
+    overlay.className = 'cartoon-overlay';
+    overlayImg = document.createElement('img');
+    overlayImg.src = img.src;
+    overlayImg.className = 'cartoon-overlay-img';
+
+    overlay.appendChild(overlayImg);
+    document.body.appendChild(overlay);
+
+    // Drag to pan
+    overlayImg.addEventListener('mousedown', startDrag);
+    overlayImg.addEventListener('touchstart', startDrag, { passive: false });
+
+    // Exit fullscreen on click/tap
+    overlay.addEventListener('click', closeOverlay);
   });
 
-  img.addEventListener('mousedown', e => {
-    if (!zoomed) return;
-    startX = e.clientX - panX;
-    startY = e.clientY - panY;
-    const moveHandler = ev => {
-      panX = ev.clientX - startX;
-      panY = ev.clientY - startY;
-      img.style.transform = `scale(2) translate(${panX/2}px, ${panY/2}px)`;
-    };
-    const upHandler = () => {
-      document.removeEventListener('mousemove', moveHandler);
-      document.removeEventListener('mouseup', upHandler);
-    };
-    document.addEventListener('mousemove', moveHandler);
-    document.addEventListener('mouseup', upHandler);
-  });
+  function startDrag(e) {
+    e.preventDefault();
+    const evt = e.type.startsWith('touch') ? e.touches[0] : e;
+    startX = evt.clientX - panX;
+    startY = evt.clientY - panY;
+
+    document.addEventListener(e.type.startsWith('touch') ? 'touchmove' : 'mousemove', onDrag, { passive: false });
+    document.addEventListener(e.type.startsWith('touch') ? 'touchend' : 'mouseup', stopDrag);
+  }
+
+  function onDrag(e) {
+    e.preventDefault();
+    const evt = e.type.startsWith('touch') ? e.touches[0] : e;
+    panX = evt.clientX - startX;
+    panY = evt.clientY - startY;
+    overlayImg.style.transform = `translate(${panX}px, ${panY}px) scale(2)`;
+  }
+
+  function stopDrag(e) {
+    document.removeEventListener('mousemove', onDrag);
+    document.removeEventListener('mouseup', stopDrag);
+    document.removeEventListener('touchmove', onDrag);
+    document.removeEventListener('touchend', stopDrag);
+  }
+
+  function closeOverlay(e) {
+    e.stopPropagation();
+    document.body.removeChild(overlay);
+    overlay = null;
+  }
 }
 
 function renderCaptionSkeleton() {
