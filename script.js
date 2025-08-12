@@ -1,5 +1,4 @@
-
-// Minimal prototype script for Jumble puzzle with caption syllables support
+const REFDT = 45880; // Change this start date Excel number as needed
 let currentSet = null;
 let currentWord = null;
 let pool = [];
@@ -7,22 +6,68 @@ let answer = [];
 let solvedWords = new Set();
 let collectedHL = [];
 
-function $(sel){return document.querySelector(sel)}
-function $all(sel){return Array.from(document.querySelectorAll(sel))}
+function $(sel) { return document.querySelector(sel) }
+function $all(sel) { return Array.from(document.querySelectorAll(sel)) }
 
-async function loadSet(){
-  const res = await fetch('data/sets/d001.json');
+async function loadSet() {
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const excelNum = Math.floor((today - new Date(1899, 11, 30)) / (1000*60*60*24));
+  const offset = excelNum - REFDT;
+  let fileName = `data/sets/d${String(offset).padStart(3,'0')}.json`;
+  let isRandom = false;
+
+  let res;
+  try {
+    res = await fetch(fileName);
+    if (!res.ok) throw new Error();
+  } catch {
+    isRandom = true;
+    const rand = Math.floor(Math.random() * 5) + 1; // adjust max when adding more files
+    fileName = `data/sets/d${String(rand).padStart(3,'0')}.json`;
+    res = await fetch(fileName);
+    $("#randomLabel").style.display = "block";
+  }
+
   currentSet = await res.json();
   renderJumblesList();
   showInfo('Loaded set: ' + currentSet.title);
-  document.getElementById('cartoonImg').src = currentSet.image;
+  $('#cartoonImg').src = currentSet.image;
   renderCaptionSkeleton();
 }
 
-function renderCaptionSkeleton(){
+function enableImageZoomPan() {
+  const img = $('#cartoonImg');
+  let zoomed = false;
+  let startX, startY, panX = 0, panY = 0;
+
+  img.addEventListener('click', () => {
+    zoomed = !zoomed;
+    img.style.transform = zoomed ? 'scale(2)' : 'scale(1)';
+    if (!zoomed) { panX = panY = 0; img.style.transformOrigin = 'center'; }
+  });
+
+  img.addEventListener('mousedown', e => {
+    if (!zoomed) return;
+    startX = e.clientX - panX;
+    startY = e.clientY - panY;
+    const moveHandler = ev => {
+      panX = ev.clientX - startX;
+      panY = ev.clientY - startY;
+      img.style.transform = `scale(2) translate(${panX/2}px, ${panY/2}px)`;
+    };
+    const upHandler = () => {
+      document.removeEventListener('mousemove', moveHandler);
+      document.removeEventListener('mouseup', upHandler);
+    };
+    document.addEventListener('mousemove', moveHandler);
+    document.addEventListener('mouseup', upHandler);
+  });
+}
+
+function renderCaptionSkeleton() {
   const captionCells = $('#captionCells');
   captionCells.innerHTML = '';
-
   const capSyllables = currentSet.caption.syllables;
   const capSpaces = currentSet.caption.spaces || [];
 
@@ -41,7 +86,7 @@ function renderCaptionSkeleton(){
   });
 }
 
-function renderJumblesList(){
+function renderJumblesList() {
   const list = $('#jumblesList'); list.innerHTML='';
   currentSet.words.forEach(w=>{
     const item = document.createElement('div');
@@ -62,12 +107,15 @@ function renderJumblesList(){
     right.textContent = 'Word ' + w.word_index;
     item.appendChild(left);
     item.appendChild(right);
-    item.addEventListener('click', ()=> selectJumble(w.word_index));
+    item.addEventListener('click', ()=> {
+      selectJumble(w.word_index);
+      document.getElementById('workArea').scrollIntoView({behavior: 'smooth'});
+    });
     list.appendChild(item);
   });
 }
 
-function selectJumble(wordIndex){
+function selectJumble(wordIndex) {
   currentWord = currentSet.words.find(w=>w.word_index===wordIndex);
   pool = [];
   const jum = currentSet.jumbles.find(j=>j.word_index===wordIndex);
@@ -82,7 +130,7 @@ function selectJumble(wordIndex){
   updateHint('');
 }
 
-function renderWorkArea(){
+function renderWorkArea() {
   const poolEl = $('#pool'); poolEl.innerHTML='';
   pool.forEach(cell=>{
     if(!cell.used){
@@ -106,7 +154,7 @@ function renderWorkArea(){
   renderHLPool();
 }
 
-function onPoolTap(id){
+function onPoolTap(id) {
   const cell = pool.find(c=>c.id==id && !c.used);
   if(!cell) return;
   const idx = answer.findIndex(x=>x===null);
@@ -116,7 +164,7 @@ function onPoolTap(id){
   renderWorkArea();
 }
 
-function onAnswerTap(pos){
+function onAnswerTap(pos) {
   const cell = answer[pos];
   if(!cell) return;
   const p = pool.find(c=>c.id===cell.id);
@@ -126,12 +174,7 @@ function onAnswerTap(pos){
 }
 
 function updateHint(msg){ $('#hint').textContent = msg || '' }
-
-function resetPool(){
-  pool.forEach(c=>c.used=false);
-  answer = new Array(currentWord.length).fill(null);
-  renderWorkArea();
-}
+function resetPool(){ pool.forEach(c=>c.used=false); answer = new Array(currentWord.length).fill(null); renderWorkArea(); }
 
 function confirmAnswer(){
   const seq = answer.map(a=> a? a.text : '');
@@ -152,6 +195,9 @@ function confirmAnswer(){
     showInfo('Correct! HL syllables collected (if any).');
     if(solvedWords.size === currentSet.words.length){
       startCaptionAssembly();
+      document.getElementById('jumblesList').scrollIntoView({behavior: 'smooth'});
+	  showInfo('🎉 Jumbles Done! Go for Caption!');
+      // showCongrats('Jumbles Done! Go for Caption!');
     }
   } else {
     updateHint('Incorrect — try again');
@@ -165,76 +211,52 @@ function arraysEqual(a,b){
   }
   return true;
 }
-function renderHLPool(){
-  const el = $('#hlPool'); 
-  el.innerHTML = '';
 
+function renderHLPool(){
+  const el = $('#hlPool'); el.innerHTML = '';
   collectedHL.forEach((s, i) => {
     const b = document.createElement('button');
     b.className = 'cell';
     b.textContent = s;
     b.dataset.idx = i;
-
-    // Normalize to NFC before comparison
-    if (
-      currentSet.reusable_syllables &&
-      currentSet.reusable_syllables.some(rs => rs.normalize('NFC') === s.normalize('NFC'))
-    ) {
+    if (currentSet.reusable_syllables &&
+      currentSet.reusable_syllables.some(rs => rs.normalize('NFC') === s.normalize('NFC'))) {
       b.style.backgroundColor = 'lightgreen';
       b.dataset.reusable = 'true';
     }
-
     b.addEventListener('click', () => {
       const captionCells = Array.from($('#captionCells').children)
         .filter(c => c.classList.contains('cell'));
       const empty = captionCells.find(c => c.textContent === '_');
       if (empty) {
         empty.textContent = s;
-        // Hide only if not reusable
         if (!b.dataset.reusable) {
           b.style.visibility = 'hidden';
         }
       }
     });
-
     el.appendChild(b);
   });
-}
-
-
-
-function onHLTap(i){
-  const captionCells = Array.from($('#captionCells').children).filter(c=>c.classList.contains('cell'));
-  const empty = captionCells.find(c=>c.textContent==='_');
-  if(!empty) return;
-  empty.textContent = collectedHL[i];
 }
 
 function startCaptionAssembly(){
   showInfo('All words solved! Assemble the caption.');
   $('#hlArea').style.borderColor = 'var(--green)';
   updateHint('Click HL syllables to fill caption cells.');
-  
-  // Show controls for caption
   $('#captionControls').style.display = 'flex';
   $('#resetCaptionBtn').onclick = resetCaption;
   $('#confirmCaptionBtn').onclick = checkCaption;
-
 }
 
 function resetCaption(){
   const captionCells = Array.from($('#captionCells').children)
     .filter(c => c.classList.contains('cell'));
   captionCells.forEach(c => c.textContent = '_');
-
-  // Restore all HL buttons visibility
   document.querySelectorAll('#hlPool .cell').forEach(btn => {
     btn.style.visibility = 'visible';
   });
-
   updateHint('Caption reset. Click HL letters again.');
 }
-
 
 function checkCaption(){
   const capSyllables = currentSet.caption.syllables;
@@ -243,19 +265,23 @@ function checkCaption(){
                    .map(c=> c.textContent==='_'? '' : c.textContent);
   if(arraysEqual(got, capSyllables)){
     updateHint('');
-    showInfo('🎉 Congratulations — caption matched!');
+    showInfo('🎉 Congratulations! — Caption matched!');
+	showCongrats();
     $('#captionCells').style.background = '#eaffef';
   } else {
     updateHint('Caption does not match yet.');
   }
 }
 
-
-
-
 function showInfo(s){ $('#info').textContent = s; }
+function showCongrats(){
+  const popup = $('#congratsPopup');
+  popup.style.display = 'flex';
+  setTimeout(()=> popup.style.display = 'none', 3000);
+}
 
 document.getElementById('resetBtn').addEventListener('click', ()=> resetPool());
 document.getElementById('confirmBtn').addEventListener('click', ()=> confirmAnswer());
 
+enableImageZoomPan();
 loadSet();
