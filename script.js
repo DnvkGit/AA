@@ -224,7 +224,7 @@ function confirmAnswer(){
       startCaptionAssembly();
       document.getElementById('jumblesList').scrollIntoView({behavior: 'smooth'});
 	  showInfo('🎉 Jumbles Done! Go for Caption!');
-      // showCongrats('Jumbles Done! Go for Caption!');
+      showJCongrats();
     }
   } else {
     updateHint('Incorrect — try again');
@@ -307,6 +307,11 @@ function showCongrats(){
   setTimeout(()=> popup.style.display = 'none', 3000);
 }
 
+function showJCongrats(){
+  const popup = $('#congratsJPopup');
+  popup.style.display = 'flex';
+  setTimeout(()=> popup.style.display = 'none', 3000);
+}
 document.getElementById('resetBtn').addEventListener('click', ()=> resetPool());
 document.getElementById('confirmBtn').addEventListener('click', ()=> confirmAnswer());
 
