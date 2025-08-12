@@ -40,6 +40,7 @@ function enableImageZoomPan() {
   const img = $('#cartoonImg');
   let overlay, overlayImg;
   let startX = 0, startY = 0, panX = 0, panY = 0;
+  let isDragging = false;
 
   img.addEventListener('click', () => {
     // Create overlay for fullscreen view
@@ -51,17 +52,21 @@ function enableImageZoomPan() {
 
     overlay.appendChild(overlayImg);
     document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden'; // prevent background scroll
 
     // Drag to pan
     overlayImg.addEventListener('mousedown', startDrag);
     overlayImg.addEventListener('touchstart', startDrag, { passive: false });
 
-    // Exit fullscreen on click/tap
-    overlay.addEventListener('click', closeOverlay);
+    // Exit fullscreen on click/tap if not dragging
+    overlay.addEventListener('click', e => {
+      if (!isDragging) closeOverlay();
+    });
   });
 
   function startDrag(e) {
     e.preventDefault();
+    isDragging = false;
     const evt = e.type.startsWith('touch') ? e.touches[0] : e;
     startX = evt.clientX - panX;
     startY = evt.clientY - panY;
@@ -72,6 +77,7 @@ function enableImageZoomPan() {
 
   function onDrag(e) {
     e.preventDefault();
+    isDragging = true;
     const evt = e.type.startsWith('touch') ? e.touches[0] : e;
     panX = evt.clientX - startX;
     panY = evt.clientY - startY;
@@ -83,14 +89,17 @@ function enableImageZoomPan() {
     document.removeEventListener('mouseup', stopDrag);
     document.removeEventListener('touchmove', onDrag);
     document.removeEventListener('touchend', stopDrag);
+    setTimeout(() => { isDragging = false; }, 50);
   }
 
-  function closeOverlay(e) {
-    e.stopPropagation();
+  function closeOverlay() {
     document.body.removeChild(overlay);
+    document.body.style.overflow = '';
     overlay = null;
+    panX = panY = 0;
   }
 }
+
 
 function renderCaptionSkeleton() {
   const captionCells = $('#captionCells');
