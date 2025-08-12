@@ -85,3 +85,24 @@ header h1 { margin: 0; font-size: 18px; }
   .left, .right { max-height: none; }
   .center { order: -1; } /* Image and caption come first on mobile */
 }
+.cartoon-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow: hidden;
+}
+
+.cartoon-overlay-img {
+  max-width: none; /* allow zoom */
+  max-height: none;
+  transform: scale(2); /* initial zoom level */
+  transform-origin: center;
+  cursor: grab;
+}
+
