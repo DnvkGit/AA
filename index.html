@@ -56,12 +56,26 @@
     </section>
   </main>
 
-  <div id="congratsPopup" class="popup" style="display:none;">
+  <div id="congratsPopup" class="popup" style="display:none" >
     <div class="popup-content">
-      🎉 Congratulations! 🎉
-      <div class="stars"></div>
+    🎉 Congratulations! Caption Solved! 🎉
+    <!-- <div class="stars"></div>   -->
+  </div>
+</div>
+  
+  <div id="congratsJPopup" class="popup" style="display:none">
+    <div class="popup-content">
+      🎉 పదాలు చక్కగా అమర్చారు! ఇక చిత్రానికి శీర్షిక వ్రాయండి! 🎉
+      <!-- <div class="stars"></div> -->
     </div>
   </div>
+<!--  
+~~~style="display:none;"
+function showCongrats(){
+  const popup = $('#congratsPopup');
+  popup.style.display = 'flex';
+  setTimeout(()=> popup.style.display = 'none', 3000);
+}   -->
 
   <script src="script.js"></script>
 </body>
