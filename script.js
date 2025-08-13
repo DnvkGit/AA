@@ -434,6 +434,25 @@ function checkCaption(){
       finalEl.className = 'final-caption';
       document.getElementById('captionArea').appendChild(finalEl);
     }
+	// ✅ Hide Reset / Confirm Caption buttons
+const resetBtn = document.getElementById('resetCaption');
+if (resetBtn) resetBtn.style.display = 'none';
+
+const confirmBtn = document.getElementById('confirmCaption');
+if (confirmBtn) confirmBtn.style.display = 'none';
+const capControls = document.getElementById('captionControls');
+if (capControls) capControls.style.display = 'none';
+
+// ✅ Clear HL area
+const hlArea = document.querySelector('.hlArea');
+if (hlArea) {
+  /* // hlArea.innerHTML = ''; // remove collected syllables & title */
+  hlArea.style.transition = 'opacity 0.5s ease';
+hlArea.style.opacity = '0';
+setTimeout(() => hlArea.innerHTML = '', 500);
+
+}
+
     /* finalEl.textContent = finalMessage; */
 	finalEl.innerHTML = finalMessage;
     document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
