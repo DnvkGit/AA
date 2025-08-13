@@ -451,7 +451,28 @@ if (hlArea) {
 hlArea.style.opacity = '0';
 setTimeout(() => hlArea.innerHTML = '', 500);
 
+  }
+  // ✅ Show solved words in place of jumbled area
+const workArea = document.getElementById('workArea');
+// Find a place right below the caption
+// ✅ Show solved words below caption
+// ✅ Show solved words below caption
+const captionArea = document.getElementById('captionArea');
+if (captionArea) {
+  // Remove old solved words summary if any
+  const oldSummary = document.getElementById('solvedWordsSummary');
+  if (oldSummary) oldSummary.remove();
+
+  // Create solved words summary
+  const solvedList = document.createElement('div');
+  solvedList.id = 'solvedWordsSummary';
+  solvedList.innerHTML = '<h3>Solved Words</h3>' + renderAllSolvedWords();
+
+  // Insert after captionArea
+  captionArea.insertAdjacentElement('afterend', solvedList);
 }
+
+
 
     /* finalEl.textContent = finalMessage; */
 	finalEl.innerHTML = finalMessage;
@@ -476,6 +497,16 @@ function showJCongrats(){
   popup.style.display = 'flex';
   setTimeout(()=> popup.style.display = 'none', 3000);
 }
+function renderAllSolvedWords() {
+  let html = '<ul>';
+  currentSet.words.forEach(w => {
+    html += `<li>${w.syllables.join('')}</li>`;
+  });
+  html += '</ul>';
+  return html;
+}
+
+
 document.getElementById('resetBtn').addEventListener('click', ()=> resetPool());
 document.getElementById('confirmBtn').addEventListener('click', ()=> confirmAnswer());
 
