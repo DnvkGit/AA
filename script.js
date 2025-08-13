@@ -1,6 +1,8 @@
-const REFDT = 45880; // Change this start date Excel number as needed
+const REFDT = 45881; // Change this start date Excel number as needed
+console.log(REFDT);
 let currentSet = null;
 let currentWord = null;
+let offsetS = null;
 let pool = [];
 let answer = [];
 let solvedWords = new Set();
@@ -12,20 +14,31 @@ function $all(sel) { return Array.from(document.querySelectorAll(sel)) }
 async function loadSet() {
   const today = new Date();
   today.setHours(0,0,0,0);
-  const excelNum = Math.floor((today - new Date(1899, 11, 30)) / (1000*60*60*24));
-  const offset = excelNum - REFDT;
-  let fileName = `data/sets/d${String(offset).padStart(3,'0')}.json`;
+  const excelNum = Math.floor((today - new Date(1899, 11, 30,0,0,0,0)) / (1000*60*60*24));
+  const offset = excelNum - REFDT +1;
+  console.log(excelNum,REFDT,offset,String(1000+offset));
+  offsetS = String(1000+offset).substring(1,4);
+  console.log(offsetS);
+  /* let fileName = `data/sets/d${String(offset).padStart(3,'0')}.json`; */
+  
+  filename="data/sets/d"+offsetS+".json"
+  
+  /*let fileName = `data/sets/$fname`; */
+  console.log(filename);
   let isRandom = false;
 
   let res;
   try {
-    res = await fetch(fileName);
+    res = await fetch(filename);
+	console.log("res",res);
     if (!res.ok) throw new Error();
   } catch {
     isRandom = true;
-    const rand = Math.floor(Math.random() * 5) + 1; // adjust max when adding more files
-    fileName = `data/sets/d${String(rand).padStart(3,'0')}.json`;
-    res = await fetch(fileName);
+    /*const rand = Math.floor(Math.random() * 5) + 1; // adjust max when adding more files */
+	rand = 2
+    filename = `data/sets/d${String(rand).padStart(3,'0')}.json`;
+	console.log(filename);
+    res = await fetch(filename);
     $("#randomLabel").style.display = "block";
   }
 
@@ -94,6 +107,7 @@ function enableImageZoomPan() {
 
   function closeOverlay() {
     document.body.removeChild(overlay);
+    document.body.style.overflow = '';
     document.body.style.overflow = '';
     overlay = null;
     panX = panY = 0;
@@ -293,7 +307,7 @@ function resetCaption(){
   });
   updateHint('Caption reset. Click HL letters again.');
 }
-
+/*
 function checkCaption(){
   const capSyllables = currentSet.caption.syllables;
   const got = Array.from($('#captionCells').children)
@@ -308,6 +322,90 @@ function checkCaption(){
     updateHint('Caption does not match yet.');
   }
 }
+   commented for new one added to accommodate pre/inter/post comments for caption
+ function checkCaption(){
+  const capSyllables = currentSet.caption.syllables;
+  const got = Array.from($('#captionCells').children)
+                   .filter(c=>c.classList.contains('cell'))
+                   .map(c=> c.textContent==='_'? '' : c.textContent);
+
+  if(arraysEqual(got, capSyllables)){
+    updateHint('');
+    showInfo('🎉 Congratulations! — Caption matched!');
+    $('#captionCells').style.background = '#eaffef';
+    showCongrats();
+
+    // NEW: build final message with optional comments
+    let captionText = got.join('');
+    let comments = currentSet.caption_comments || {};
+    let finalMessage = 
+      (comments.pre ? comments.pre + ' ' : '') +
+      captionText +
+      (comments.inter ? comments.inter : '') +
+      (comments.post ? comments.post : '');
+
+    // Display it somewhere (e.g., below caption)
+    let finalEl = document.createElement('div');
+    finalEl.className = 'final-caption';
+    finalEl.textContent = finalMessage;
+    document.getElementById('captionArea').appendChild(finalEl);
+
+  } else {
+    updateHint('Caption does not match yet.');
+  }
+}  */
+function checkCaption(){
+  const capSyllables = currentSet.caption.syllables;
+  const got = Array.from($('#captionCells').children)
+                   .filter(c=>c.classList.contains('cell'))
+                   .map(c=> c.textContent==='_'? '' : c.textContent);
+
+  if(arraysEqual(got, capSyllables)){
+    updateHint('');
+    showInfo('🎉 Congratulations! — Caption matched!');
+    $('#captionCells').style.background = '#eaffef';
+    showCongrats();
+
+    // NEW: Build final caption with pre/inter/post
+    let comments = currentSet.caption_comments || {};
+    let finalParts = [];
+
+    if (comments.pre) {
+      finalParts.push(`<span class="comment-part">${comments.pre}</span>`);
+    }
+
+    // Go through syllables and insert inter-comments where needed
+    got.forEach((syll, idx) => {
+      finalParts.push(`<span class="caption-part">${syll}</span>`);
+      if (Array.isArray(comments.inter)) {
+        comments.inter
+          .filter(c => c.pos === idx + 1) // match 1-based index
+          .forEach(c => finalParts.push(`<span class="comment-part">${c.text}</span>`));
+      }
+    });
+
+    if (comments.post) {
+      finalParts.push(`<span class="comment-part">${comments.post}</span>`);
+    }
+
+    let finalMessage = finalParts.join('');
+    
+    // Display it under caption
+    let finalEl = document.querySelector('.final-caption');
+    if (!finalEl) {
+      finalEl = document.createElement('div');
+      finalEl.className = 'final-caption';
+      document.getElementById('captionArea').appendChild(finalEl);
+    }
+    /* finalEl.textContent = finalMessage; */
+	finalEl.innerHTML = finalMessage;
+
+
+  } else {
+    updateHint('Caption does not match yet.');
+  }
+}
+
 
 function showInfo(s){ $('#info').textContent = s; }
 function showCongrats(){
