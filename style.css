@@ -105,4 +105,22 @@ header h1 { margin: 0; font-size: 18px; }
   transform-origin: center;
   cursor: grab;
 }
+.final-caption {
+  margin-top: 10px;
+  padding: 6px;
+  border-top: 1px solid #ccc;
+  font-style: italic;
+  color: #333;
+}
+.caption-part {
+  color: darkblue;       /* main caption text */
+  font-weight: bold;
+}
+
+.comment-part {
+  color: darkred;        /* pre/inter/post comments */
+  font-style: italic;
+}
+
+
 
