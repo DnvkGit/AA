@@ -54,7 +54,7 @@ header h1 { margin: 0; font-size: 18px; }
 }
 .cartoonBox img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.3s ease; }
 
-.captionArea { border: 1px dashed #ddd; padding: 8px; border-radius: 6px; background: #bafada}
+.captionArea { border: 1px dashed #ddd; padding: 8px; border-radius: 6px; background: #bafada; font-weight:bold}
 .captionCells { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 6px; }
 
 .workArea { border: 1px dashed #ddd; padding: 8px; border-radius: 6px; background: #C0FADD}
@@ -63,9 +63,19 @@ header h1 { margin: 0; font-size: 18px; }
 .controls button { padding: 6px 10px; border-radius: 6px; border: 1px solid #bbb; background: #eaf7b9; }
 
 .hlArea { margin-top: 8px; border: 1px dashed #ddd; padding: 8px; border-radius: 6px; background: #C9D2F5; }
+.hlArea .hlTitle {
+  /*color: #f5ecc9; */
+  font-weight: bold;
+  border-bottom: 2px solid #ff6600;  /*optional underline */
+  padding-bottom: 2px;
+}
 .hlPool { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 6px; }
 .info { font-size: 14px; line-height: 1.4; }
 .hint { color: #b33; margin-top: 6px; }
+.hl-cell { 
+  border: 3px solid #ff6600 !important; /* thick orange */
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.6);
+}
 
 .popup {
   position: fixed; top: 0; left: 0; width: 100%; height: 100%;
@@ -121,8 +131,8 @@ header h1 { margin: 0; font-size: 18px; }
 .comment-part {
   color: darkred;        /* pre/inter/post comments */
   font-style: italic;
-  
 }
+
 
 
 
