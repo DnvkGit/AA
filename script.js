@@ -164,21 +164,7 @@ function renderJumblesList() {
     list.appendChild(item);
   });
 }
-/*
-function selectJumble(wordIndex) {
-  currentWord = currentSet.words.find(w=>w.word_index===wordIndex);
-  pool = [];
-  const jum = currentSet.jumbles.find(j=>j.word_index===wordIndex);
-  let idc=1;
-  jum.jumble_seq.forEach(idx=>{
-    pool.push({id:idc++, text: currentWord.syllables[idx-1], sourceIndex: idx-1, used:false});
-  });
-  answer = new Array(currentWord.length).fill(null);
-  renderWorkArea();
-  $('#workArea').hidden = false;
-  showInfo('Solving Word ' + wordIndex + ' (length ' + currentWord.length + ')');
-  updateHint('');
-} */
+
 function selectJumble(wordIndex) {
   currentWord = currentSet.words.find(w => w.word_index === wordIndex);
 
@@ -300,17 +286,21 @@ function arraysEqual(a,b){
 }
 
 function renderHLPool(){
-  const el = $('#hlPool'); el.innerHTML = '';
+  const el = $('#hlPool'); 
+  el.innerHTML = '';
+  
   collectedHL.forEach((s, i) => {
     const b = document.createElement('button');
-    b.className = 'cell';
+    b.className = 'cell hl-cell'; // ✅ always orange border
     b.textContent = s;
     b.dataset.idx = i;
+
     if (currentSet.reusable_syllables &&
       currentSet.reusable_syllables.some(rs => rs.normalize('NFC') === s.normalize('NFC'))) {
-      b.style.backgroundColor = 'lightgreen';
+      b.classList.add('reusable'); // ✅ green bg + orange border
       b.dataset.reusable = 'true';
     }
+
     b.addEventListener('click', () => {
       const captionCells = Array.from($('#captionCells').children)
         .filter(c => c.classList.contains('cell'));
@@ -322,9 +312,12 @@ function renderHLPool(){
         }
       }
     });
+
     el.appendChild(b);
   });
 }
+
+
 
 function startCaptionAssembly(){
   showInfo('All words solved! Assemble the caption.');
@@ -344,53 +337,7 @@ function resetCaption(){
   });
   updateHint('Caption reset. Click HL letters again.');
 }
-/*
-function checkCaption(){
-  const capSyllables = currentSet.caption.syllables;
-  const got = Array.from($('#captionCells').children)
-                   .filter(c=>c.classList.contains('cell'))
-                   .map(c=> c.textContent==='_'? '' : c.textContent);
-  if(arraysEqual(got, capSyllables)){
-    updateHint('');
-    showInfo('🎉 Congratulations! — Caption matched!');
-	showCongrats();
-    $('#captionCells').style.background = '#eaffef';
-  } else {
-    updateHint('Caption does not match yet.');
-  }
-}
-   commented for new one added to accommodate pre/inter/post comments for caption
- function checkCaption(){
-  const capSyllables = currentSet.caption.syllables;
-  const got = Array.from($('#captionCells').children)
-                   .filter(c=>c.classList.contains('cell'))
-                   .map(c=> c.textContent==='_'? '' : c.textContent);
 
-  if(arraysEqual(got, capSyllables)){
-    updateHint('');
-    showInfo('🎉 Congratulations! — Caption matched!');
-    $('#captionCells').style.background = '#eaffef';
-    showCongrats();
-
-    // NEW: build final message with optional comments
-    let captionText = got.join('');
-    let comments = currentSet.caption_comments || {};
-    let finalMessage = 
-      (comments.pre ? comments.pre + ' ' : '') +
-      captionText +
-      (comments.inter ? comments.inter : '') +
-      (comments.post ? comments.post : '');
-
-    // Display it somewhere (e.g., below caption)
-    let finalEl = document.createElement('div');
-    finalEl.className = 'final-caption';
-    finalEl.textContent = finalMessage;
-    document.getElementById('captionArea').appendChild(finalEl);
-
-  } else {
-    updateHint('Caption does not match yet.');
-  }
-}  */
 function checkCaption(){
   const capSyllables = currentSet.caption.syllables;
   const got = Array.from($('#captionCells').children)
@@ -402,6 +349,8 @@ function checkCaption(){
     showInfo('🎉 Congratulations! — Caption matched!');
     $('#captionCells').style.background = '#eaffef';
     showCongrats();
+
+
 
     // NEW: Build final caption with pre/inter/post
     let comments = currentSet.caption_comments || {};
@@ -497,12 +446,24 @@ function showJCongrats(){
   popup.style.display = 'flex';
   setTimeout(()=> popup.style.display = 'none', 3000);
 }
+
 function renderAllSolvedWords() {
-  let html = '<ul>';
+  let html = '<div class="solvedWordsGrid">';
+  
   currentSet.words.forEach(w => {
-    html += `<li>${w.syllables.join('')}</li>`;
+    html += '<div class="solvedWordRow">';
+/*    w.syllables.forEach(syl => {
+      html += `<div class="cell">${syl}</div>`;
+    }); */
+	w.syllables.forEach((syl, idx) => {
+    const isHL = Array.isArray(w.hl_positions) && w.hl_positions.includes(idx + 1);
+    html += `<div class="cell${isHL ? ' hl-cell' : ''}">${syl}</div>`;
+    });
+
+    html += '</div>';
   });
-  html += '</ul>';
+
+  html += '</div>';
   return html;
 }
 
