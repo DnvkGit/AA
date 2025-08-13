@@ -164,7 +164,7 @@ function renderJumblesList() {
     list.appendChild(item);
   });
 }
-
+/*
 function selectJumble(wordIndex) {
   currentWord = currentSet.words.find(w=>w.word_index===wordIndex);
   pool = [];
@@ -178,31 +178,68 @@ function selectJumble(wordIndex) {
   $('#workArea').hidden = false;
   showInfo('Solving Word ' + wordIndex + ' (length ' + currentWord.length + ')');
   updateHint('');
+} */
+function selectJumble(wordIndex) {
+  currentWord = currentSet.words.find(w => w.word_index === wordIndex);
+
+  // ✅ get HL positions from jumble data if available
+  const jum = currentSet.jumbles.find(j => j.word_index === wordIndex);
+  if (jum.hl_positions) {
+    currentWord.hl_positions = jum.hl_positions;
+  }
+
+  pool = [];
+  let idc = 1;
+  jum.jumble_seq.forEach(idx => {
+    pool.push({ id: idc++, text: currentWord.syllables[idx - 1], sourceIndex: idx - 1, used: false });
+  });
+  answer = new Array(currentWord.length).fill(null);
+  renderWorkArea();
+  $('#workArea').hidden = false;
+  showInfo('Solving Word ' + wordIndex + ' (length ' + currentWord.length + ')');
+  updateHint('');
 }
 
+
 function renderWorkArea() {
-  const poolEl = $('#pool'); poolEl.innerHTML='';
-  pool.forEach(cell=>{
-    if(!cell.used){
+  const poolEl = $('#pool'); 
+  poolEl.innerHTML = '';
+  pool.forEach(cell => {
+    if (!cell.used) {
       const b = document.createElement('button');
-      b.className='cell';
+      b.className = 'cell';
       b.textContent = cell.text;
       b.dataset.id = cell.id;
-      b.addEventListener('click', ()=> onPoolTap(cell.id));
+      b.addEventListener('click', () => onPoolTap(cell.id));
       poolEl.appendChild(b);
     }
   });
-  const ansEl = $('#answerRow'); ansEl.innerHTML='';
-  for(let i=0;i<answer.length;i++){
+
+  const ansEl = $('#answerRow'); 
+  ansEl.innerHTML = '';
+
+  for (let i = 0; i < answer.length; i++) {
     const a = document.createElement('div');
-    a.className='cell';
+    a.className = 'cell';
     a.dataset.pos = i;
-    a.textContent = answer[i]? answer[i].text : '';
-    a.addEventListener('click', ()=> onAnswerTap(i));
+
+    // ✅ Highlight HL cells based on hl_positions (1-based)
+    if (
+      currentWord &&
+      Array.isArray(currentWord.hl_positions) &&
+      currentWord.hl_positions.includes(i + 1)
+    ) {
+      a.classList.add('hl-cell');
+    }
+
+    a.textContent = answer[i] ? answer[i].text : '';
+    a.addEventListener('click', () => onAnswerTap(i));
     ansEl.appendChild(a);
   }
+
   renderHLPool();
 }
+
 
 function onPoolTap(id) {
   const cell = pool.find(c=>c.id==id && !c.used);
@@ -399,6 +436,7 @@ function checkCaption(){
     }
     /* finalEl.textContent = finalMessage; */
 	finalEl.innerHTML = finalMessage;
+    document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 
   } else {
