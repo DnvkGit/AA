@@ -57,5 +57,15 @@
     "total_words":5,
     "max_word_length": 4,
     "sno": 1
-  }
+  },
+"caption_comments": {
+  "pre": "అందుకే పెద్దలు అన్నారు — ",  
+  "inter": [
+    { "pos": 4, "text": "" },
+    { "pos": 7, "text": "" }
+  ],
+  "post": " - హానికరం."
+}
+
+
 }
