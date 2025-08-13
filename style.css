@@ -35,9 +35,9 @@ header h1 { margin: 0; font-size: 18px; }
 .jumblesList .jumbleItem {
   display: flex; gap: 6px; align-items: center;
   padding: 6px; border-radius: 6px; border: 1px solid #eee;
-  margin-bottom: 8px; cursor: pointer; background: #87ceeb;
+  margin-bottom: 8px; cursor: pointer; background: #ffc8dc;
 }
-.jumblesList .jumbleItem.solved { opacity: 0.5; background: #f5f5f5; }
+.jumblesList .jumbleItem.solved { opacity: 0.5; background: #B2D8B2; }
 
 .jumblePreview { display: flex; gap: 4px; }
 .cell {
@@ -54,15 +54,15 @@ header h1 { margin: 0; font-size: 18px; }
 }
 .cartoonBox img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.3s ease; }
 
-.captionArea { border: 1px dashed #ddd; padding: 8px; border-radius: 6px; }
+.captionArea { border: 1px dashed #ddd; padding: 8px; border-radius: 6px; background: #bafada}
 .captionCells { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 6px; }
 
-.workArea { border: 1px dashed #ddd; padding: 8px; border-radius: 6px; }
+.workArea { border: 1px dashed #ddd; padding: 8px; border-radius: 6px; background: #C0FADD}
 .pool, .answerRow { display: flex; flex-wrap: wrap; gap: 8px; padding: 6px; min-height: 60px; }
 .controls { margin-top: 8px; display: flex; gap: 8px; }
 .controls button { padding: 6px 10px; border-radius: 6px; border: 1px solid #bbb; background: #eaf7b9; }
 
-.hlArea { margin-top: 8px; border: 1px dashed #ddd; padding: 8px; border-radius: 6px; }
+.hlArea { margin-top: 8px; border: 1px dashed #ddd; padding: 8px; border-radius: 6px; background: #C9D2F5; }
 .hlPool { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 6px; }
 .info { font-size: 14px; line-height: 1.4; }
 .hint { color: #b33; margin-top: 6px; }
@@ -111,6 +111,7 @@ header h1 { margin: 0; font-size: 18px; }
   border-top: 1px solid #ccc;
   font-style: italic;
   color: #333;
+  background: #C9D2F5;
 }
 .caption-part {
   color: darkblue;       /* main caption text */
