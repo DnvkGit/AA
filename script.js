@@ -427,7 +427,7 @@ if (captionArea) {
     /* finalEl.textContent = finalMessage; */
 	finalEl.innerHTML = finalMessage;
    /* document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' }); */
-    document.getElementById('header').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.scrollTo({   top: 0,   behavior: 'smooth' });
 
   } else {
     updateHint('Caption does not match yet.');
