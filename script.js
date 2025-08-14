@@ -1,4 +1,4 @@
-const REFDT = 45881; // Change this start date Excel number as needed
+const REFDT = 45879; // Change this start date Excel number as needed
 console.log(REFDT);
 let currentSet = null;
 let currentWord = null;
@@ -47,6 +47,7 @@ async function loadSet() {
   showInfo('Loaded set: ' + currentSet.title);
   $('#cartoonImg').src = currentSet.image;
   renderCaptionSkeleton();
+  
 }
 
 function enableImageZoomPan() {
@@ -425,8 +426,8 @@ if (captionArea) {
 
     /* finalEl.textContent = finalMessage; */
 	finalEl.innerHTML = finalMessage;
-    document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
-
+   /* document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' }); */
+    document.getElementById('header-row').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   } else {
     updateHint('Caption does not match yet.');
@@ -471,5 +472,34 @@ function renderAllSolvedWords() {
 document.getElementById('resetBtn').addEventListener('click', ()=> resetPool());
 document.getElementById('confirmBtn').addEventListener('click', ()=> confirmAnswer());
 
+
 enableImageZoomPan();
 loadSet();
+document.addEventListener('DOMContentLoaded', () => {
+  const helpBtn = document.getElementById('helpBtn');
+  const helpOverlay = document.getElementById('helpOverlay');
+  const closeHelpBtn = document.getElementById('closeHelp');
+
+  if (helpBtn && helpOverlay) {
+    helpBtn.addEventListener('click', () => {
+      helpOverlay.style.display = 'flex';
+    });
+
+    // Click outside to close
+    helpOverlay.addEventListener('click', (e) => {
+      if (e.target.id === 'helpOverlay') {
+        helpOverlay.style.display = 'none';
+      }
+    });
+
+    // Close button to close
+    if (closeHelpBtn) {
+      closeHelpBtn.addEventListener('click', () => {
+        helpOverlay.style.display = 'none';
+      });
+    }
+  }
+});
+
+
+
