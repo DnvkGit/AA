@@ -7,13 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--
   <header>
     <h1>అక్షరాల అమరిక</h1>
     <div class="sub">మన తెలుగు, మన భవిష్యత్తు</div>
     <div id="randomLabel" class="random-label" style="display:none;">Random</div>
-  </header>
+  </header> 
+  -->
+
+<header>
+  <div class="header-row">
+    <h1>అక్షరాల అమరిక</h1>
+    <button id="helpBtn" class="help-btn">?</button>
+  </div>
+  <div class="sub">మన తెలుగు, మన భవిష్యత్తు</div>
+  <div id="randomLabel" class="random-label" style="display:none;">Random</div>
+</header>
+
+ 
+  
 
   <main class="container">
+
     <section class="center">
       <div class="cartoonBox" id="cartoonBox">
         <img id="cartoonImg" src="" alt="cartoon" />
@@ -69,13 +84,22 @@
       <!-- <div class="stars"></div> -->
     </div>
   </div>
-<!--  
-~~~style="display:none;"
-function showCongrats(){
-  const popup = $('#congratsPopup');
-  popup.style.display = 'flex';
-  setTimeout(()=> popup.style.display = 'none', 3000);
-}   -->
+
+
+<div id="helpOverlay" class="help-overlay" style="display:none;">
+  <div class="help-content">
+    <h2>అక్షరాల అమరికకు స్వాగతం</h2>
+    <ul>
+      <li class="line-purple">Cartoon Area – Tap to zoom, tap again to close.</li>
+      <li class="line-blue">Jumble Area – Tap a word to move to Work Area.</li>
+      <li class="line-teal">Work Area – Tap syllables in order to form the word.</li>
+      <li class="line-green">HL Pool – Collects important syllables for the caption.</li>
+      <li class="line-orange">Caption Area – Arrange syllables to form the final caption.</li>
+    </ul>
+    <p>ప్రతిరోజు ఒక కొత్త పజిల్ మీ కోసం!</p>
+    <button id="closeHelp" class="close-help">Close</button>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
