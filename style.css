@@ -9,9 +9,8 @@
 * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
 body { margin: 0; background: var(--bg-color); color: #222; }
 header { background: #bafaba; padding: 12px 16px; border-bottom: 1px solid #ddd; position: relative; }
-header h1 { margin: 0; font-size: 18px; }
+header h1 { margin: 0; font-size: 18px; } 
 .sub { font-size: 12px; color: #555; }
-
 .random-label {
   position: absolute;
   top: 8px;
@@ -20,6 +19,123 @@ header h1 { margin: 0; font-size: 18px; }
   color: rgba(50,50,50,0.7);
   font-style: italic;
 }
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.help-btn {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 5000; /* make sure it's above other header elements */
+}
+
+
+.help-btn:hover {
+  background-color: darkmagenta;
+}
+/*
+.help-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-content {
+  background: linear-gradient(135deg, purple, blue, teal, green);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  text-align: left;
+  color: white;
+}
+
+.help-content h2 {
+  margin-top: 0;
+}
+
+.help-content ul {
+  padding-left: 20px;
+}
+
+
+.close-help {
+  margin-top: 12px;
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+*/
+.help-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 15px;
+}
+
+.help-content {
+  /* background: linear-gradient(135deg, purple, blue, teal, green); */
+  background: black
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  font-size: clamp(14px, 2.5vw, 18px); /* adaptive font size */
+}
+
+.help-content h2 {
+  margin-top: 0;
+}
+
+.help-content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  font: comic sans;
+}
+
+.close-help {
+  margin-top: 12px;
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.help-content ul li {
+  margin-bottom: 8px;       /* extra spacing between lines */
+  line-height: 1.5;         /* taller lines for better readability */
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; /* change font */
+  font-weight: 700;         /* slightly bold for clarity */
+}
+
+.line-purple { color: #d1b3ff; }
+.line-blue   { color: #add8ff; }
+.line-teal   { color: #a0ffef; }
+.line-green  { color: #baffc9; }
+.line-orange { color: #ffd6a5; }
 
 .container { display: flex; gap: var(--gap); padding: 12px; }
 .left, .center, .right {
@@ -140,7 +256,7 @@ header h1 { margin: 0; font-size: 18px; }
 
 /*
 #solvedWordsSummary {
-  background-color: #bafaba; /* soft light orange */
+  background-color: #bafaba; 
   padding: 10px;
   border-radius: 6px;
   margin-top: 10px;
@@ -165,9 +281,9 @@ header h1 { margin: 0; font-size: 18px; }
 /* Container background & padding */
 #solvedWordsSummary {
   background-color: #bafaba; /* light orange */
-  padding: 10px;
+  padding: 4px;
   border-radius: 6px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 /* Keep cells same size as gameplay */
@@ -185,4 +301,5 @@ header h1 { margin: 0; font-size: 18px; }
   user-select: none;
   cursor: default; /* no click */
 }
+
 
