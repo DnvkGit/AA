@@ -1,0 +1,68 @@
+{
+"id":"d006",
+"title": "అక్షరాల అమరిక 006",
+"image": "img/C006.JPG",
+"caption": {
+"display_string":"ఇంటిగుట్టు",
+"syllables":["ఇం","టి","గు","ట్టు"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["అ","క్క","టి","క"],
+"length":4,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ఇం","దీ","వ","రం"],
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["అ","డ్డ","క","ట్టు"],
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ది","వె","గు","డి"],
+"length":4,
+"hl_positions":[3]
+    }
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,3,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,2,1,4]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,1,4,3]
+    }
+ 
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre":"పెద్దలు ",
+"inter": [
+],
+"post": " రట్టు చేయకుండా పదిలంగా వుంచమన్నారు"
+  }
+}
