@@ -1,4 +1,6 @@
-const REFDT = 45879; // Change this start date Excel number as needed
+const REFDT = 45884; 
+// Change this start date Excel number as needed
+//   For Puzzle No1 REFDT must be todays ExcelDt
 console.log(REFDT);
 let currentSet = null;
 let currentWord = null;
@@ -14,17 +16,26 @@ function $all(sel) { return Array.from(document.querySelectorAll(sel)) }
 async function loadSet() {
   const today = new Date();
   today.setHours(0,0,0,0);
+  /* Calculate days since 1970-01-01- Javascript start Dt */
+  const daysSince1970 = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
+  /* Add the offset for Excel's 1900 epoch */
+  const excelT = daysSince1970 + 25569 + 1; /* to get excel Nbr for today */
+  const offset = excelT -REFDT + 1 ; /* offset to access the json & images */
+  const offsetS = String(1000+offset).substring(1,4);
+ 
+  filename="data/sets/d"+offsetS+".json"
+  // console.log("**",REFDT,excelT,offsetS,filename);	
+  /* const today = new Date();
+  today.setHours(0,0,0,0);
   const excelNum = Math.floor((today - new Date(1899, 11, 30,0,0,0,0)) / (1000*60*60*24));
   const offset = excelNum - REFDT +1;
   console.log(excelNum,REFDT,offset,String(1000+offset));
   offsetS = String(1000+offset).substring(1,4);
   console.log(offsetS);
-  /* let fileName = `data/sets/d${String(offset).padStart(3,'0')}.json`; */
-  
+  /* let fileName = `data/sets/d${String(offset).padStart(3,'0')}.json`; 
   filename="data/sets/d"+offsetS+".json"
-  
-  /*let fileName = `data/sets/$fname`; */
-  console.log(filename);
+  /*let fileName = `data/sets/$fname`; 
+  console.log(filename); */
   let isRandom = false;
 
   let res;
