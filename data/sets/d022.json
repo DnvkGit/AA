@@ -1,0 +1,78 @@
+{
+"id":"d022",
+"title": "అక్షరాల అమరిక 022",
+"image": "img/C022.JPG",
+"caption": {
+"display_string":"కంద నీ బొంద",
+"syllables":["కం","ద","నీ","బొం","ద"],
+"spaces":[2,3]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["న","ద","ప","తి"],
+"length":4,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["క","ను","కం","దు"],
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["బం","ద","డ","ము"],
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ధ","మ","నీ","ల"],
+"length":4,
+"hl_positions":[3]
+    },
+ {
+   "word_index": 5,
+  "syllables": ["బొం","ద","డ","ము"],
+"length":4,
+"hl_positions":[1]
+    }
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,2,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,1,4,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,2,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,1,4]
+    },
+    {
+   "word_index": 5,
+  "jumble_seq":[2,4,1,3]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "కవి గారు ప్రాస కోసం ప్రయాస పడితే ఇలా జ్ణానోదయమైనది  ",
+"inter": [
+
+],
+"post": ""
+  }
+}
