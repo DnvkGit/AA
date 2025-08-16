@@ -1,7 +1,6 @@
-const REFDT = 45884; 
+const REFDT = 45884;
 // Change this start date Excel number as needed
 //   For Puzzle No1 REFDT must be todays ExcelDt
-console.log(REFDT);
 let currentSet = null;
 let currentWord = null;
 let offsetS = null;
@@ -24,18 +23,7 @@ async function loadSet() {
   const offsetS = String(1000+offset).substring(1,4);
  
   filename="data/sets/d"+offsetS+".json"
-  // console.log("**",REFDT,excelT,offsetS,filename);	
-  /* const today = new Date();
-  today.setHours(0,0,0,0);
-  const excelNum = Math.floor((today - new Date(1899, 11, 30,0,0,0,0)) / (1000*60*60*24));
-  const offset = excelNum - REFDT +1;
-  console.log(excelNum,REFDT,offset,String(1000+offset));
-  offsetS = String(1000+offset).substring(1,4);
-  console.log(offsetS);
-  /* let fileName = `data/sets/d${String(offset).padStart(3,'0')}.json`; 
-  filename="data/sets/d"+offsetS+".json"
-  /*let fileName = `data/sets/$fname`; 
-  console.log(filename); */
+  console.log("**",REFDT,excelT,offsetS,filename);
   let isRandom = false;
 
   let res;
@@ -365,6 +353,7 @@ function checkCaption(){
 
 
     // NEW: Build final caption with pre/inter/post
+	/* code replaced to include spaces- modified on 16Aug
     let comments = currentSet.caption_comments || {};
     let finalParts = [];
 
@@ -386,8 +375,42 @@ function checkCaption(){
       finalParts.push(`<span class="comment-part">${comments.post}</span>`);
     }
 
+    let finalMessage = finalParts.join(''); */
+	    // NEW: Build final caption with pre/inter/post + spaces[]
+      
+    let comments = currentSet.caption_comments || {};
+    let spaces = (currentSet.caption && currentSet.caption.spaces) || []; // fix here
+    let finalParts = [];
+
+    if (comments.pre) {
+      finalParts.push(`<span class="comment-part">${comments.pre}</span>`);
+    }
+
+    got.forEach((syll, idx) => {
+      // Basic syllable
+      finalParts.push(`<span class="caption-part">${syll}</span>`);
+
+      // Insert a space if spaces[] contains this position (1-based index)
+      if (Array.isArray(spaces) && spaces.includes(idx + 1)) {
+        finalParts.push('&nbsp;');
+      }
+
+      // Insert inter-comments if any match this position
+      if (Array.isArray(comments.inter)) {
+        comments.inter
+          .filter(c => c.pos === idx + 1) // 1-based index match
+          .forEach(c => finalParts.push(`<span class="comment-part">${c.text}</span>`));
+      }
+    });
+
+    if (comments.post) {
+      finalParts.push(`<span class="comment-part">${comments.post}</span>`);
+    }
+
     let finalMessage = finalParts.join('');
-    
+
+
+    // New code of Aug16th ends here
     // Display it under caption
     let finalEl = document.querySelector('.final-caption');
     if (!finalEl) {
@@ -438,7 +461,7 @@ if (captionArea) {
     /* finalEl.textContent = finalMessage; */
 	finalEl.innerHTML = finalMessage;
    /* document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' }); */
-    window.scrollTo({   top: 0,   behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
   } else {
     updateHint('Caption does not match yet.');
