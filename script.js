@@ -29,16 +29,19 @@ async function loadSet() {
   let res;
   try {
     res = await fetch(filename);
+	
 	console.log("res",res);
     if (!res.ok) throw new Error();
   } catch {
     isRandom = true;
     /*const rand = Math.floor(Math.random() * 5) + 1; // adjust max when adding more files */
-	rand = 2
+	rand = Math.floor(Math.random() * 22) + 1
     filename = `data/sets/d${String(rand).padStart(3,'0')}.json`;
 	console.log(filename);
     res = await fetch(filename);
+	document.getElementById('randomLabel').textContent = "Random";
     $("#randomLabel").style.display = "block";
+	
   }
 
   currentSet = await res.json();
@@ -483,21 +486,22 @@ function showJCongrats(){
 }
 
 function renderAllSolvedWords() {
-  let html = '<div class="solvedWordsGrid">';
-  
-  currentSet.words.forEach(w => {
-    html += '<div class="solvedWordRow">';
-/*    w.syllables.forEach(syl => {
-      html += `<div class="cell">${syl}</div>`;
-    }); */
-	w.syllables.forEach((syl, idx) => {
-    const isHL = Array.isArray(w.hl_positions) && w.hl_positions.includes(idx + 1);
-    html += `<div class="cell${isHL ? ' hl-cell' : ''}">${syl}</div>`;
+  let html = '<div class="solved-words-grid">';
+  currentSet.words.forEach((w) => {
+    html += '<div class="solved-word-row">';
+    
+    w.syllables.forEach((s, idx) => {
+      const isHL = w.hl_positions && w.hl_positions.includes(idx + 1);
+	  html += `<div class="cell solved${isHL ? ' hl-cell' : ''}">${s}</div>`;
+
     });
+
+    if (w.meaning) {
+      html += `<span class="word-meaning">– ${w.meaning}</span>`;
+    }
 
     html += '</div>';
   });
-
   html += '</div>';
   return html;
 }
