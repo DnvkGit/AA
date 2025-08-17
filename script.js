@@ -12,16 +12,18 @@ let collectedHL = [];
 function $(sel) { return document.querySelector(sel) }
 function $all(sel) { return Array.from(document.querySelectorAll(sel)) }
 
-async function loadSet() {
-  const today = new Date();
-  today.setHours(0,0,0,0);
-  /* Calculate days since 1970-01-01- Javascript start Dt */
+async function loadSet(puzzleset) {
+  let today = new Date();   // if no override, use current date
+
+  // convert to Excel date
+  //const excelDate = Math.floor((today - new Date(1899, 11, 30)) / (1000 * 60 * 60 * 24));
+	today.setHours(0,0,0,0);
+  // Calculate days since 1970-01-01- Javascript start Dt 
   const daysSince1970 = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
-  /* Add the offset for Excel's 1900 epoch */
-  const excelT = daysSince1970 + 25569 + 1; /* to get excel Nbr for today */
-  const offset = excelT -REFDT + 1 ; /* offset to access the json & images */
+  // Add the offset for Excel's 1900 epoch 
+  const excelT = daysSince1970 + 25569 + 1;  //to get excel Nbr for today 
+  const offset = excelT -REFDT + 1 ;  //offset to access the json & images 
   const offsetS = String(1000+offset).substring(1,4);
- 
   filename="data/sets/d"+offsetS+".json"
   console.log("**",REFDT,excelT,offsetS,filename);
   let isRandom = false;
@@ -34,7 +36,7 @@ async function loadSet() {
     if (!res.ok) throw new Error();
   } catch {
     isRandom = true;
-    /*const rand = Math.floor(Math.random() * 5) + 1; // adjust max when adding more files */
+    //const rand = Math.floor(Math.random() * 5) + 1; // adjust max when adding more files 
 	rand = Math.floor(Math.random() * 22) + 1
     filename = `data/sets/d${String(rand).padStart(3,'0')}.json`;
 	console.log(filename);
@@ -48,9 +50,9 @@ async function loadSet() {
   renderJumblesList();
   showInfo('Loaded set: ' + currentSet.title);
   $('#cartoonImg').src = currentSet.image;
-  renderCaptionSkeleton();
-  
+  renderCaptionSkeleton();	
 }
+
 
 function enableImageZoomPan() {
   const img = $('#cartoonImg');
@@ -354,32 +356,7 @@ function checkCaption(){
     showCongrats();
 
 
-
-    // NEW: Build final caption with pre/inter/post
-	/* code replaced to include spaces- modified on 16Aug
-    let comments = currentSet.caption_comments || {};
-    let finalParts = [];
-
-    if (comments.pre) {
-      finalParts.push(`<span class="comment-part">${comments.pre}</span>`);
-    }
-
-    // Go through syllables and insert inter-comments where needed
-    got.forEach((syll, idx) => {
-      finalParts.push(`<span class="caption-part">${syll}</span>`);
-      if (Array.isArray(comments.inter)) {
-        comments.inter
-          .filter(c => c.pos === idx + 1) // match 1-based index
-          .forEach(c => finalParts.push(`<span class="comment-part">${c.text}</span>`));
-      }
-    });
-
-    if (comments.post) {
-      finalParts.push(`<span class="comment-part">${comments.post}</span>`);
-    }
-
-    let finalMessage = finalParts.join(''); */
-	    // NEW: Build final caption with pre/inter/post + spaces[]
+	// NEW: Build final caption with pre/inter/post + spaces[]
       
     let comments = currentSet.caption_comments || {};
     let spaces = (currentSet.caption && currentSet.caption.spaces) || []; // fix here
@@ -460,7 +437,6 @@ if (captionArea) {
 }
 
 
-
     /* finalEl.textContent = finalMessage; */
 	finalEl.innerHTML = finalMessage;
    /* document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' }); */
@@ -476,13 +452,13 @@ function showInfo(s){ $('#info').textContent = s; }
 function showCongrats(){
   const popup = $('#congratsPopup');
   popup.style.display = 'flex';
-  setTimeout(()=> popup.style.display = 'none', 3000);
+  setTimeout(()=> popup.style.display = 'none', 2000);
 }
 
 function showJCongrats(){
   const popup = $('#congratsJPopup');
   popup.style.display = 'flex';
-  setTimeout(()=> popup.style.display = 'none', 3000);
+  setTimeout(()=> popup.style.display = 'none', 2000);
 }
 
 function renderAllSolvedWords() {
@@ -513,6 +489,7 @@ document.getElementById('confirmBtn').addEventListener('click', ()=> confirmAnsw
 
 enableImageZoomPan();
 loadSet();
+
 document.addEventListener('DOMContentLoaded', () => {
   const helpBtn = document.getElementById('helpBtn');
   const helpOverlay = document.getElementById('helpOverlay');
@@ -538,6 +515,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+// ==========================
+// Secret long-press header test mode
+// ==========================
+const header = document.querySelector('header');
+let pressTimer;
+
+// desktop long press
+header.addEventListener('mousedown', () => {
+  pressTimer = setTimeout(triggerSecretPrompt, 1500); // 1.5 sec hold
+});
+header.addEventListener('mouseup', () => clearTimeout(pressTimer));
+header.addEventListener('mouseleave', () => clearTimeout(pressTimer));
+
+// mobile long press
+header.addEventListener('touchstart', () => {
+  pressTimer = setTimeout(triggerSecretPrompt, 1500);
+}, { passive: true }); // we can safely use passive here
+header.addEventListener('touchend', () => clearTimeout(pressTimer));
+
+function triggerSecretPrompt() {
+  const puzzleNum = prompt("🔑 Enter puzzle number (e.g., 23):");
+  if (puzzleNum) {
+    const padded = puzzleNum.padStart(3, '0');
+    fetch(`data/sets/d${padded}.json`)
+      .then(r => {
+        if (!r.ok) throw new Error("Puzzle not found");
+        return r.json();
+      })
+      .then(set => {
+        currentSet = set;
+        renderJumblesList();
+        showInfo('Loaded test set: ' + currentSet.title);
+        $('#cartoonImg').src = currentSet.image;
+        renderCaptionSkeleton();
+      })
+      .catch(err => {
+        console.error("Load failed:", err);
+        showInfo("⚠️ Puzzle not found");
+      });
+  }
+}
 
 
 
