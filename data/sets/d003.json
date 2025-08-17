@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["క","ర","ట","క"],
+   "meaning": "ఎండ్రకాయ",
 "length":4,
 "hl_positions":[2]
   },
   {
    "word_index": 2,
   "syllables": ["స","ర","భ","స"],
+  "meaning": "కోపం కలవాడు",
 "length":4,
 "hl_positions":[3]
   },
  {
    "word_index": 3,
   "syllables": ["ఆ","లా","ప","న"],
+  "meaning": "రాగాలాపము",
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 4,
   "syllables": ["ని","శా","గ","ణ"],
+  "meaning": "రాత్రి సమూహము",
 "length":4,
 "hl_positions":[4]
     }
