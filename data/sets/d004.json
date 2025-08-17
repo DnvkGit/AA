@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["కొం","డ","కో","తి"],
+    "meaning": "కొండముచ్చు",
 "length":4,
 "hl_positions":[3]
   },
   {
    "word_index": 2,
   "syllables": ["బ","ద్ధ","ము","ష్టి"],
+     "meaning": "పిసినిగొట్టు",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 3,
   "syllables": ["దృ","ష్టి","కో","ణం"],
+    "meaning": "వైఖరి",
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 4,
   "syllables": ["రా","మా","య","ణం"],
+    "meaning": "రాముని చరితం",
 "length":4,
 "hl_positions":[4]
     }
@@ -67,3 +71,4 @@
 "post": " మార్చి చూడండి "
   }
 }
+
