@@ -258,6 +258,7 @@ header h1 { margin: 0; font-size: 18px; }
 #solvedWordsSummary h3 {
   margin-top: 0;
   color: #ff6600; /* matches HL color */
+  margin-bottom: 6px;
 }
 
 #solvedWordsSummary ul {
@@ -277,6 +278,7 @@ header h1 { margin: 0; font-size: 18px; }
   padding: 4px;
   border-radius: 6px;
   margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 /* Keep cells same size as gameplay */
