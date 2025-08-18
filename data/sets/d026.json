@@ -1,0 +1,72 @@
+{
+"id":"d026",
+"title": "అక్షరాల అమరిక 026",
+"image": "img/C026.JPG",
+"caption": {
+"display_string":"రిమ్మ తెగులు",
+"syllables":["రి","మ్మ","తె","గు","లు"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["తి","మ్మ","న","గు"],
+  "meaning": "అందమగు",
+"length":4,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["తె","లి","క","లు"],
+  "meaning": "నువ్వులు",
+"length":4,
+"hl_positions":[1,4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["క","మ్మ","గు","ట్టు"],
+  "meaning": "అతిరహస్యము",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["కు","ది","రి","క "],
+  "meaning": "అమరిక",
+"length":4,
+"hl_positions":[3]
+    }
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,2,3,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,2,1,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,2,4,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,2,3,1]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "రెమ్మ తెగలు తెమ్మంటే   ",
+"inter": [
+
+],
+"post": " అక్కడ  మొదలయింది"
+  }
+}
