@@ -13,22 +13,32 @@
     <div class="sub">మన తెలుగు, మన భవిష్యత్తు</div>
     <div id="randomLabel" class="random-label" style="display:none;">Random</div>
   </header> 
-  -->
+ 
 
 <header>
   <div class="header-row">
     <h1>అక్షరాల అమరిక</h1>
+	
     <button id="helpBtn" class="help-btn">?</button>
   </div>
   <div class="sub">మన తెలుగు, మన భవిష్యత్తు</div>
   <div id="randomLabel" class="random-label" style="display:none;">Random</div>
+</header>  commented on 17 Aug to bring Random label below Help Button -->
+<header>
+  <div class="header-row">
+    <h1>అక్షరాల అమరిక</h1>
+	<div id="topRightControls">
+		<button id="helpBtn" class="help-btn">?</button>
+	    <div id="randomLabel" class=random-label" style = "display:none;">Random</div>
+    </div>
+  </div>
+  <div class="sub">మన తెలుగు, మన భవిష్యత్తు</div>
+  <!-- <div id="randomLabel" class="random-label" style="display:none;">Random</div>  -->
 </header>
-
  
   
 
   <main class="container">
-
     <section class="center">
       <div class="cartoonBox" id="cartoonBox">
         <img id="cartoonImg" src="" alt="cartoon" />
@@ -42,7 +52,7 @@
         <button id="resetCaptionBtn">Reset Caption</button>
         <button id="confirmCaptionBtn">Confirm Caption</button>
       </div>
-
+<!-- Change done on 18thAug to bring up Answer cells in work area above jumble cells
       <div id="workArea" class="workArea" hidden>
         <div class="workTitle">Work Area</div>
         <div id="pool" class="pool"></div>
@@ -53,6 +63,18 @@
         </div>
         <div id="hint" class="hint"></div>
       </div>
+-->
+		<div id="workArea" class="workArea" hidden>
+		  <div class="workTitle">Work Area</div>
+		  <div id="answerRow" class="answerRow"></div>
+		  <div id="pool" class="pool"></div>
+		  <div class="controls">
+			<button id="resetBtn">Reset</button>
+			<button id="confirmBtn">Confirm</button>
+		  </div>
+		  <div id="hint" class="hint"></div>
+		</div>
+
 
       <div class="hlArea" id="hlArea">
         <div class="hlTitle">గుర్తించబడిన గళ్ళ అక్షరములతో శీర్షిక పొందుపరచండి </div>
