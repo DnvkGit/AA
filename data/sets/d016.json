@@ -11,30 +11,35 @@
   {
    "word_index": 1,
   "syllables": ["తి","రు","గు","డు"],
+  "meaning": "భ్రమణము",
 "length":4,
 "hl_positions":[4]
   },
   {
    "word_index": 2,
   "syllables": ["తి","ట్టు","మో","తు"],
+  "meaning": "దూషణశీలి",
 "length":4,
 "hl_positions":[3]
   },
  {
    "word_index": 3,
   "syllables": ["వ","రు","స","ము"],
+  "meaning": "సంవత్సరము",
 "length":4,
 "hl_positions":[2]
   },
  {
    "word_index": 4,
   "syllables": ["ద","మ","ఘో","ష"],
+  "meaning": "అహంకారము ప్రకటించువాడు",
 "length":4,
 "hl_positions":[1]
     },
  {
    "word_index": 5,
   "syllables": ["దే","వ","దా","రు"],
+  "meaning": "ఒకానొక వృక్షము",
 "length":4,
 "hl_positions":[3]
     }

@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["పొ","ల","ప","రి"],
+  "meaning": "దొంగ",
 "length":4,
 "hl_positions":[3]
   },
   {
    "word_index": 2,
   "syllables": ["సా","మ","ర","స్యం"],
+  "meaning": "ప్రశాంతం",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 3,
   "syllables": ["అ","ల","స","ట"],
+  "meaning": "ఆయాసము",
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 4,
   "syllables": ["ప్ర","తి","హా","రి"],
+  "meaning": "ద్వారపాలకుడు",
 "length":4,
 "hl_positions":[3]
     } 

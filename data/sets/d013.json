@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["మ","దా","ల","స"],
+  "meaning": "అప్సరస",
 "length":4,
 "hl_positions":[2]
   },
   {
    "word_index": 2,
   "syllables": ["ఇం","దు","మౌ","ళి"],
+  "meaning": "ఈశ్వరుడు",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 3,
   "syllables": ["సు","త","రా","ము"],
+  "meaning": "పూర్తిగా",
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 4,
   "syllables": ["అ","రి","కా","లు"],
+  "meaning": "పాదతలము",
 "length":4,
 "hl_positions":[3]
     }

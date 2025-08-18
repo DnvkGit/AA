@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["సం","ప్రే","ష","ము"],
+  "meaning": "ఆజ్ఞ ",
 "length":4,
 "hl_positions":[1]
   },
   {
    "word_index": 2,
   "syllables": ["కా","టా","గ","రు"],
+  "meaning": "పెద్దత్రాసు తూచు వ్యక్తి",
 "length":4,
 "hl_positions":[3]
   },
  {
    "word_index": 3,
   "syllables": ["న","డ్డి","పూ","స"],
+  "meaning": "నడ్డికీలు",
 "length":4,
 "hl_positions":[2]
   },
  {
    "word_index": 4,
   "syllables": ["దం","డా","కో","రి"],
+  "meaning": "మొండి",
 "length":4,
 "hl_positions":[3]
     }
