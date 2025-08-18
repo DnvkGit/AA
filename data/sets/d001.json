@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["కృ","పా","ణ","ము"],
+  "meaning": "కరవాలము",
 "length":4,
 "hl_positions":[2]
   },
   {
    "word_index": 2,
   "syllables": ["అ","ను","మా","నం"],
+  "meaning": "సందేహం",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 3,
   "syllables": ["మ","రా","ళ","ము"],
+  "meaning": "హంస",
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 4,
   "syllables": ["అ","వ","ధూ","త"],
+  "meaning": "సన్యాసి",
 "length":4,
 "hl_positions":[3]
     }

@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["ఎం","డ","తా","కు"],
+  "meaning": "వడదెబ్బ",
 "length":4,
 "hl_positions":[3]
   },
   {
    "word_index": 2,
   "syllables": ["తా","ళ","గిం","పు"],
+  "meaning": "తాళమువేయు",
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 3,
   "syllables": ["తి","ర","కా","సు"],
+  "meaning": "జటిలసమస్య",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 4,
   "syllables": ["ఒ","రి","పి","డి"],
+  "meaning": "రాపిడి",
   "length":4,
   "hl_positions":[3]
     }

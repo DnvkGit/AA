@@ -1,5 +1,5 @@
 {
-"id":"d09 ",
+"id":"d009 ",
 "title": "అక్షరాల అమరిక ",
 "image": "img/C009.JPG",
 "caption": {
@@ -11,30 +11,35 @@
   {
    "word_index": 1,
   "syllables": ["క","బ","ళ","ము"],
+  "meaning": "ముద్ద",
 "length":4,
 "hl_positions":[2]
   },
   {
    "word_index": 2,
   "syllables": ["వ","డి","యా","లు"],
+  "meaning": "వేయించిన తిను బండారం",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 3,
   "syllables": ["ని","షి","ద్ద","ము"],
+  "meaning": "ప్రతిబంధము",
 "length":4,
 "hl_positions":[3]
   },
  {
    "word_index": 4,
   "syllables": ["కుం","ద","న","ము"],
+  "meaning": "మేలిమి బంగారము",
 "length":4,
 "hl_positions":[1]
     },
  {
    "word_index": 5,
   "syllables": ["బ్ర","హ్మాం","డ","ము"],
+  "meaning": "విశ్వము",
 "length":4,
 "hl_positions":[3]
     }

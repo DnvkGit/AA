@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["అ","క్క","టి","క"],
+  "meaning": "కనికరం",
 "length":4,
 "hl_positions":[3]
   },
   {
    "word_index": 2,
   "syllables": ["ఇం","దీ","వ","రం"],
+  "meaning": "నల్లకలువ",
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 3,
   "syllables": ["అ","డ్డ","క","ట్టు"],
+  "meaning": "నిరోధించు",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 4,
   "syllables": ["ది","వె","గు","డి"],
+  "meaning": "దీపము పెట్టుగూడు",
 "length":4,
 "hl_positions":[3]
     }
