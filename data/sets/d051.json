@@ -1,0 +1,84 @@
+{
+"id":"d051",
+"title": "అక్షరాల అమరిక 051",
+"image": "img/C051.JPG",
+"caption": {
+"display_string":"మామమామ",
+"syllables":["మా","మ","మా","మ"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["మ","ధు","జి","త్తు"],
+"meaning":"విష్ణువు",
+"length":4,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ర","మా","ప","తి"],
+"meaning":"విష్ణువు",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["మ","రు","న","య్య"],
+"meaning":"విష్ణువు",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["మా","ధ","వు","డు"],
+"meaning":"విష్ణువు    ",
+"length":4,
+"hl_positions":[1]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,1,4,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,4,3,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,2,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఇపుడా అల్లుడికి, శ్రీమన్నారాయణుడే దిక్కు ఎందుకంటే ",
+"inter": [
+{"pos": 4, "text":"ఆయనే! "}
+
+],
+"post": "   మామా ఒకింటి అల్లుడే  -  టివీ సీరియల్ టైటిల్లా"
+  }
+}

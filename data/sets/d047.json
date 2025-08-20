@@ -1,0 +1,83 @@
+{
+"id":"d047",
+"title": "అక్షరాల అమరిక 047",
+"image": "img/C047.JPG",
+"caption": {
+"display_string":"మంచితనం",
+"syllables":["మం","చి","త","నం"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["వి","చా","రి","త"],
+"meaning":"చింతించబడినది",
+"length":4,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["నం","ద","క","ము"],
+"meaning":"విష్ణుఖడ్గము  ",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["శే","షిం","చి","న"],
+"meaning":"మిగిలిన",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["క","మం","డ","లం"],
+"meaning":"సన్యాసుల పాత్ర",
+"length":4,
+"hl_positions":[2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,1,2,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,4,2,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,4,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+
+],
+"post": " "
+  }
+}

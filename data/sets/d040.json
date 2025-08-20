@@ -1,0 +1,83 @@
+{
+"id":"d040",
+"title": "అక్షరాల అమరిక 040",
+"image": "img/C040.JPG",
+"caption": {
+"display_string":"తీరుబడి",
+"syllables":["తీ","రు","బ","డి"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["కో","లం","బ","క"],
+"meaning":"వీణయొక్క భాగము",
+"length":4,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["క","ట్టు","ము","డి"],
+"meaning":"నిబంధన ",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["జా","తీ","ఫ","ల"],
+"meaning":"జాజికాయ",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["త","రు","ణు","డు"],
+"meaning":"కోడెకాడు",
+"length":4,
+"hl_positions":[2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,3,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,2,4,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,4,2,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,1,4]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "పొద్దస్తమానం కాఫీ, టీ లు అడుగుతూ , పనిలొ అడ్డం పడుతూవుంటే మరేం చేస్తుంది ఆవిడ?  అందుకే ఇప్పుడూ కాస్త ",
+"inter": [
+
+],
+"post": " దొరికింది పారాయణంకు"
+  }
+}
