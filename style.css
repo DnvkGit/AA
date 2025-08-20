@@ -33,7 +33,49 @@ header h1 { margin: 0; font-size: 18px; }
 .help-btn:hover {
   background-color: darkmagenta;
 }
+/*
+.help-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.help-content {
+  background: linear-gradient(135deg, purple, blue, teal, green);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  text-align: left;
+  color: white;
+}
+
+.help-content h2 {
+  margin-top: 0;
+}
+
+.help-content ul {
+  padding-left: 20px;
+}
+
+
+.close-help {
+  margin-top: 12px;
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+*/
 .help-overlay {
   position: fixed;
   inset: 0;
@@ -198,6 +240,8 @@ header h1 { margin: 0; font-size: 18px; }
 .caption-part {
   color: darkblue;       /* main caption text */
   font-weight: bold;
+  text-decoration: underline;
+
 }
 
 .comment-part {
@@ -205,7 +249,14 @@ header h1 { margin: 0; font-size: 18px; }
   font-style: italic;
 }
 
-
+/*
+#solvedWordsSummary {
+  background-color: #bafaba; 
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+*/
 #solvedWordsSummary h3 {
   margin-top: 0;
   color: #ff6600; /* matches HL color */
