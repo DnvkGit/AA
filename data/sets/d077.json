@@ -1,0 +1,83 @@
+{
+"id":"d077",
+"title": "అక్షరాల అమరిక 077",
+"image": "img/C077.JPG",
+"caption": {
+"display_string":"నలుగురూ హరీ ",
+"syllables":["న","లు","గు","రూ","హ","రీ"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["పు","న","రూ","ఢ"],
+"meaning":"పునర్వివాహిత",
+"length":4,
+"hl_positions":[2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["గు","హ","ప్ర","సూ"],
+"meaning":"పార్వతీ ",
+"length":4,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ప","రీ","క్ష","క"],
+"meaning":"పరీక్షించువాడు",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["గు","న","క","లు"],
+"meaning":"తృణధాన్యం ",
+"length":4,
+"hl_positions":[4]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,1,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,1,2]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఈ  వైద్యావధానము చూస్తే వైద్యో  ",
+"inter": [
+
+],
+"post": "  అనిపిస్తుంది కదూ?"
+  }
+}
