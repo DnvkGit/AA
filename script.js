@@ -547,7 +547,7 @@ function triggerSecretPrompt() {
       .then(set => {
         currentSet = set;
         renderJumblesList();
-        showInfo('Loaded test set: ' + currentSet.title);
+		showInfo('Loaded test set: ' + currentSet.title + ' ' +padded);
         $('#cartoonImg').src = currentSet.image;
         renderCaptionSkeleton();
       })
