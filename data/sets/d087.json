@@ -1,0 +1,84 @@
+{
+"id":"d087",
+"title": "అక్షరాల అమరిక 087",
+"image": "img/C087.JPG",
+"caption": {
+"display_string":"వినమ్రతే",
+"syllables":["వి","న","మ్ర","తే"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["తా","మ్ర","క","ము"],
+"meaning":"రాగి",
+"length":4,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ఆ","చ","మ","న"],
+"meaning":"శుభకార్యములకు మొదలు ప్రక్షాళనము",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["తే","ట","గీ","తి"],
+"meaning":"పద్యభేదము",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["దా","న","వి","ధి"],
+"meaning":"దాననియమము",
+"length":4,
+"hl_positions":[3]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,4,1,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,1,2,4]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,1,4,2]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+
+],
+"post": "  "
+  }
+}
+

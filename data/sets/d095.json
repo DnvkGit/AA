@@ -1,0 +1,83 @@
+{
+"id":"d095",
+"title": "అక్షరాల అమరిక 095",
+"image": "img/C095.JPG",
+"caption": {
+"display_string":"మందు సామాను",
+"syllables":["మం","దు","సా","మా","ను"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["సా","మం","జ","స్య"],
+"meaning":"ఔచిత్యము",
+"length":4,
+"hl_positions":[1,2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["కు","ర్ర","దు","డ్డె"],
+"meaning":"లేగదూడ ",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["మా","ద","న","ము"],
+"meaning":"ఉమ్మెత్తచెట్టు; మత్తు కలిగించునది ",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["వ","ర","త","ను"],
+"meaning":"శ్రేష్ఠమైన శరీరం గలది",
+"length":4,
+"hl_positions":[4]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,4,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,2,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,1,4,3]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+
+],
+"post": "  "
+  }
+}
