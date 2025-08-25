@@ -1,0 +1,84 @@
+{
+"id":"d113",
+"title": "అక్షరాల అమరిక 113",
+"image": "img/C113.JPG",
+"caption": {
+"display_string":"యథా పితా తథా పుత్ర",
+"syllables":["య","థా","పి","తా","త","థా","పు","త్ర"],
+"spaces":[2,4,6]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["వి","ధూ","ని","త"],
+"meaning":"కంపింపబడ్డది",
+"length":4,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["తా","ర","క","లు"],
+"meaning":"నక్షత్రములు",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["గో","పి","పు","వ్వు"],
+"meaning":"గోబిపువ్వు / కాలిఫ్లవర్‌",
+"length":4,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ఉ","భ","య","త్ర"],
+"meaning":"రెండు పక్షాలలో",
+"length":4,
+"hl_positions":[3,4]
+},
+{
+   "word_index": 5,
+  "syllables": ["క","థా","ని","క"],
+"meaning":"చిన్నకథ",
+"length":4,
+"hl_positions":[2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,4,1,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,2,1,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,4,3,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,3,2,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,3,2,1]
+    }
+  ],
+"reusable_syllables":["థా"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+{"pos": 4, "text":":"},
+{"pos": 8, "text": ":"}
+],
+"post": "  "
+  }
+}

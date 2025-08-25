@@ -1,0 +1,83 @@
+{
+"id":"d109",
+"title": "అక్షరాల అమరిక 109",
+"image": "img/C109.JPG",
+"caption": {
+"display_string":"సుభాషితాలు",
+"syllables":["సు","భా","షి","తా","లు"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["గు","భా","లు","న"],
+"meaning":"హఠాత్తుగ",
+"length":4,
+"hl_positions":[2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["సం","జా","యి","షి"],
+"meaning":"సమాధానము ",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["తా","ళ","క","ము"],
+"meaning":"పర్వతధాతువు / చిన్న బీగము",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["వ","సు","క","ము"],
+"meaning":"ఉప్పు  /జిల్లేడు",
+"length":4,
+"hl_positions":[2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,4,1,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,4,2,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,2,1,3]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఇంతకు ఏనుగు లక్శ్మణ కవి గారు రచించేది ఏమి? ",
+"inter": [
+
+],
+"post": "  మరి అందులో సందేహం లేదు"
+  }
+}

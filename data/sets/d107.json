@@ -1,0 +1,83 @@
+{
+"id":"d107",
+"title": "అక్షరాల అమరిక 107",
+"image": "img/C107.JPG",
+"caption": {
+"display_string":"పెళ్ళామంటే బెల్లం",
+"syllables":["పె","ళ్ళా","మం","టే","బె","ల్లం"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["పిం","పి","ళ్ళా","డు"],
+"meaning":"నోటితో ఊదుతూ ఆడు",
+"length":4,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["నా","మం","బె","ట్టు"],
+"meaning":"మోసగించు ",
+"length":4,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["అం","బ","టే","ల"],
+"meaning":"అంబలి తాగే వేళ",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["చి","ల్ల","క","ల్లం"],
+"meaning":"చిందరవందర",
+"length":4,
+"hl_positions":[4]
+},
+{
+   "word_index": 5,
+  "syllables": ["పె","డు","చ","డు"],
+"meaning":"బాలుడు",
+"length":4,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,3,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,4,1,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,3,2,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,2,2,1]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఆహా! ఎంతో యుక్తితో విషయాన్ని వెల్లబుచ్చాడు! అతనికి  ",
+"inter": [
+
+],
+"post": "  మరి అందులో సందేహం లేదు"
+  }
+}
