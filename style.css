@@ -5,9 +5,18 @@
   --green: #2bbf66;
   --bg-color: #bafada; /* change this to tweak puzzle background */
 }
-
+@font-face {
+  font-family: 'Noto Sans Telugu';
+  src: url('./fonts/NotoSansTelugu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
-body { margin: 0; background: var(--bg-color); color: #222; }
+body { margin: 0; background: var(--bg-color); color: #222; font-family: 'Noto Sans Telugu', sans-serif;}
+.cell, .captionArea, .hlArea, .pool, .answerRow {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 1 em;   /* adjust as needed */
+}
 header { background: #bafaba; padding: 12px 16px; border-bottom: 1px solid #ddd; position: relative; }
 header h1 { margin: 0; font-size: 18px; } 
 .sub { font-size: 12px; color: #555; }
