@@ -1,0 +1,83 @@
+﻿{
+"id":"d123",
+"title": "అక్షరాల అమరిక 123",
+"image": "img/C123.JPG",
+"caption": {
+"display_string":"వెన్నతో పెట్టిన",
+"syllables":["వె","న్న","తో","పె","ట్టి","న"],
+"spaces":[3]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["తో","న","క","ము"],
+"meaning":"తోరణము",
+"length":4,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["వె","ట్టి","గొ","ను"],
+"meaning":"వినా వేతనం కర్మ",
+"length":4,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["స","ము","న్న","త"],
+"meaning":"వృద్ధి నొందినవాడు",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["పె","న","కు","వ"],
+"meaning":"యుద్ధము / వివాదము",
+"length":4,
+"hl_positions":[1,2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,2,1,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,2,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,4,3,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,3,2,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "తెలుగు ",
+"inter": [
+
+],
+"post": " విద్య"
+  }
+}

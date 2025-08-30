@@ -1,0 +1,83 @@
+﻿{
+"id":"d119",
+"title": "అక్షరాల అమరిక 119",
+"image": "img/C119.JPG",
+"caption": {
+"display_string":"సచ్చె జెంటిల్మాను",
+"syllables":["స","చ్చె","జెం","టి","ల్మా","ను"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ఎ","డ","జెం","దు"],
+"meaning":"సొమ్మసిల్లు",
+"length":4,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ము","స","ల్మా","ను"],
+"meaning":"మహమ్మదీయుడు",
+"length":4,
+"hl_positions":[3,4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["వ్యా","స","టి","కా"],
+"meaning":"కంచరగాడిదె",
+"length":4,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ప","చ్చె","కా","డు"],
+"meaning":"పచ్చిదొంగ",
+"length":4,
+"hl_positions":[2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,1,4,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[1,3,2,4]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+
+],
+"post": "   (* తెలుగు వాడి ఇంగ్లీషు వాడుక)"
+  }
+}

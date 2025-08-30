@@ -1,0 +1,82 @@
+﻿{
+"id":"d140",
+"title": "అక్షరాల అమరిక 140",
+"image": "img/C140.JPG",
+"caption": {
+"display_string":"ఇల్లాలంటే భీతి",
+"syllables":["ఇ","ల్లా","లం","టే","భీ","తి"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["శీ","త","భీ","రు"],
+"meaning":"మల్లెచెట్టు",
+"length":4,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["క","లం","పో","టు"],
+"meaning":"ఉత్తర్వు /pen-stroke",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ఇ","తి","వృ","త్త"],
+"meaning":"నడిచినది/ కబురు ",
+"length":4,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["క","టే","కా","రు"],
+"meaning":"హాస్యగాడు",
+"length":4,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["క","ల్లా","వె","ల్లి"],
+"meaning":"గందరగోళము",
+"length":4,
+"hl_positions":[2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,1,2,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[1,4,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,4,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,1,2,4]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+],
+"post": "  "
+  }
+}

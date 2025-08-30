@@ -1,0 +1,82 @@
+﻿{
+"id":"d129",
+"title": "అక్షరాల అమరిక 129",
+"image": "img/C129.JPG",
+"caption": {
+"display_string":"వచ్చే బుద్ధి పోయే బుద్ధి",
+"syllables":["వ","చ్చే","బు","ద్ధి","పో","యే","బు","ద్ధి"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["వ","ల","పో","త"],
+"meaning":"ఆవేదన / తలపోత",
+"length":4,
+"hl_positions":[1,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["సె","ల","యే","రు"],
+"meaning":"వాగు / ఏరు / ధార",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["సి","ద్ధి","నొం","దు"],
+"meaning":"నెరవేఱు / మృతినొందు",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["హి","మాం","బు","వు"],
+"meaning":"పన్నీరు",
+"length":4,
+"hl_positions":[3]
+},
+{
+   "word_index": 5,
+  "syllables": ["ఉ","చ్చే","ష","ము"],
+"meaning":"శేషము / మిగిలినది",
+"length":4,
+"hl_positions":[2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,4,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,2,1,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,1,2,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,1,2,3]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,1,2,4]
+    }
+  ],
+"reusable_syllables":["బు","ద్ధి"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "తప్పక ఇది  ",
+"inter": [
+],
+"post": "  గా వుంది"
+  }
+}

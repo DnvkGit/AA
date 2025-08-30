@@ -1,0 +1,82 @@
+﻿{
+"id":"d135",
+"title": "అక్షరాల అమరిక 135",
+"image": "img/C135.JPG",
+"caption": {
+"display_string":"నిశ్చితార్థము",
+"syllables":["ని","శ్చి","తా","ర్థ","ము"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["వృ","శ్చి","క","ము"],
+"meaning":"తేలు",
+"length":4,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ని","ర","ర్థ","క"],
+"meaning":"అర్థము లేనిది",
+"length":4,
+"hl_positions":[1,3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["చి","క్రౌ","డ","ము"],
+"meaning":"ఉడుత ",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["క","ర","తా","ళి"],
+"meaning":"చప్పట్లు",
+"length":4,
+"hl_positions":[3]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,2,3,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,3,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,2,4,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "హాయిగా తెలుగులో ",
+"inter": [
+],
+"post": "  అని పిలవచ్చుగా"
+  }
+}

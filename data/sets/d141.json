@@ -1,0 +1,84 @@
+﻿{
+"id":"d141",
+"title": "అక్షరాల అమరిక 141",
+"image": "img/C141.JPG",
+"caption": {
+"display_string":"వజ్రము వజ్రము కొయ్యాలి",
+"syllables":["వ","జ్ర","ము","వ","జ్ర","ము","కొ","య్యా","లి"],
+"spaces":[3,6]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["సు","ర","కొ","లి"],
+"meaning":"ఫిరంగి/ cannon",
+"length":4,
+"hl_positions":[3,4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["దా","న","వ","జ్ర"],
+"meaning":"లోభి",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["వా","రు","వ","ము"],
+"meaning":"గుఱ్ఱము ",
+"length":4,
+"hl_positions":[3,4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["స","య్యా","ట","ము"],
+"meaning":"సరసము",
+"length":4,
+"hl_positions":[2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,2,4,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,3,1,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,2,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,3,2,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":["వ","జ్ర","ము"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "  ",
+"inter": [
+{"pos": 3, "text":" ను "},
+{"pos": 6, "text": " తో "}
+],
+"post": "  "
+  }
+}

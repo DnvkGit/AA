@@ -1,0 +1,82 @@
+﻿{
+"id":"d131",
+"title": "అక్షరాల అమరిక 131",
+"image": "img/C131.JPG",
+"caption": {
+"display_string":"పితలాటం ఉబలాటం",
+"syllables":["పి","త","లా","టం","ఉ","బ","లా","టం"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["స","బ","ళ","ము"],
+"meaning":"ఈటె",
+"length":4,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["త","లా","కూ","ర్పు"],
+"meaning":"సాధ్యమగు /నెఱవేర్చు",
+"length":4,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ఔ","డు","పి","క"],
+"meaning":"తెప్పతో దాటువాడు",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ఉ","త","క","టం"],
+"meaning":"బట్టలు బాగుచేయటం",
+"length":4,
+"hl_positions":[1,4]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,1,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,4,2,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,1,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,2,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":["లా","టం"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఇరుగు పొరుగు ",
+"inter": [{"pos": 4, "text":"  మది లో "}
+],
+"post": "  "
+  }
+}
