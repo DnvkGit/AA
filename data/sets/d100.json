@@ -74,10 +74,12 @@
     "sno": 1
   },
 "caption_comments": {
-"pre": " ",
-"inter": [
+"pre": " కనపడితే  ",
+"inter": [{"pos": 4, "text":"  లేకుంటే  "}
+
 
 ],
 "post": "  "
   }
 }
+
