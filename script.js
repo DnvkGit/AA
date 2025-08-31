@@ -276,6 +276,7 @@ function confirmAnswer(){
       document.getElementById('jumblesList').scrollIntoView({behavior: 'smooth'});
 	  showInfo('🎉 Jumbles Done! Go for Caption!');
       showJCongrats();
+	  window.scrollTo({ top: 0, behavior: 'smooth' }); //Added on 31 Aug 
     }
   } else {
     updateHint('Incorrect — try again');
