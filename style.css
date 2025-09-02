@@ -304,6 +304,8 @@ header h1 { margin: 0; font-size: 18px; }
 
 .word-meaning {
   margin-left: 12px;
+  font-family: 'Noto Sans Telugu';
+  src: url('./fonts/NotoSansTelugu-Regular.ttf') format('truetype');
   font-size: 14px;
   font-style: italic;
   color: darkslateblue;
