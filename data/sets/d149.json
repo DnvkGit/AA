@@ -1,0 +1,82 @@
+﻿{
+"id":"d149",
+"title": "అక్షరాల అమరిక 149",
+"image": "img/C149.JPG",
+"caption": {
+"display_string":"భార్య భయం",
+"syllables":["భా","ర్య","భ","యం"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["స్వా","మి","కా","ర్య"],
+"meaning":"దైవ కార్యం /ప్రభువు కార్యం",
+"length":4,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["కా","యం","కూ","లి"],
+"meaning":"ఒక రైతుదగ్గరే కూలిపనివాడు",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["రా","జ","భా","ర"],
+"meaning":"రాయబారము",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["భ","ర","టు","డు"],
+"meaning":"కూలివాడు/ కుమ్మరి",
+"length":4,
+"hl_positions":[1]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,1,2,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[1,4,2,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,2,1,4]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,2,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":["రే"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "  ఇక్కడ డాక్టరు గారికి కూడా ",
+"inter": [ {"pos": 2, "text":"  అంటే  "}
+],
+"post": "  తప్పకుండా అందులో సందేహమేమి లేదు!"
+  }
+}

@@ -1,0 +1,82 @@
+﻿{
+"id":"d150",
+"title": "అక్షరాల అమరిక 150",
+"image": "img/C150.JPG",
+"caption": {
+"display_string":"ఆధునిక కవిత్వం",
+"syllables":["ఆ","ధు","ని","క","క","వి","త్వం"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ప్ర","స","వి","త"],
+"meaning":"తండ్రి",
+"length":4,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["చ","క్ర","బం","ధు"],
+"meaning":"సూర్యుడు",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ఆ","క","తా","యి"],
+"meaning":"తుంటరి",
+"length":4,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["స","ని","క","లు"],
+"meaning":"గుండ్రాయి",
+"length":4,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["త","న్మ","య","త్వం"],
+"meaning":"మైమరచిన స్థితి.",
+"length":4,
+"hl_positions":[4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,2,3,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,1,2,4]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,2,4,1]
+    }
+  ],
+"reusable_syllables":["క"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " అదే మోతాదు వుంటే తప్పకుండా అది ",
+"inter": [
+],
+"post": "  అందులో సందేహమేమి లేదు! "
+  }
+}
