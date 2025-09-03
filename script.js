@@ -8,6 +8,8 @@ let pool = [];
 let answer = [];
 let solvedWords = new Set();
 let collectedHL = [];
+let captionAttempts = 0;
+const MAX_CAPTION_ATTEMPTS = 6;
 
 function $(sel) { return document.querySelector(sel) }
 function $all(sel) { return Array.from(document.querySelectorAll(sel)) }
@@ -351,6 +353,7 @@ function checkCaption(){
                    .map(c=> c.textContent==='_'? '' : c.textContent);
 
   if(arraysEqual(got, capSyllables)){
+	captionAttempts = 0; // reset for next puzzle  
     updateHint('');
     showInfo('🎉 Congratulations! — Caption matched!');
     $('#captionCells').style.background = '#eaffef';
@@ -400,42 +403,42 @@ function checkCaption(){
       document.getElementById('captionArea').appendChild(finalEl);
     }
 	// ✅ Hide Reset / Confirm Caption buttons
-const resetBtn = document.getElementById('resetCaption');
-if (resetBtn) resetBtn.style.display = 'none';
+	const resetBtn = document.getElementById('resetCaption');
+	if (resetBtn) resetBtn.style.display = 'none';
 
-const confirmBtn = document.getElementById('confirmCaption');
-if (confirmBtn) confirmBtn.style.display = 'none';
-const capControls = document.getElementById('captionControls');
-if (capControls) capControls.style.display = 'none';
+	const confirmBtn = document.getElementById('confirmCaption');
+	if (confirmBtn) confirmBtn.style.display = 'none';
+	const capControls = document.getElementById('captionControls');
+	if (capControls) capControls.style.display = 'none';
 
-// ✅ Clear HL area
-const hlArea = document.querySelector('.hlArea');
-if (hlArea) {
-  /* // hlArea.innerHTML = ''; // remove collected syllables & title */
-  hlArea.style.transition = 'opacity 0.5s ease';
-hlArea.style.opacity = '0';
-setTimeout(() => hlArea.innerHTML = '', 500);
+	// ✅ Clear HL area
+	const hlArea = document.querySelector('.hlArea');
+	if (hlArea) {
+		/* // hlArea.innerHTML = ''; // remove collected syllables & title */
+		hlArea.style.transition = 'opacity 0.5s ease';
+		hlArea.style.opacity = '0';
+		setTimeout(() => hlArea.innerHTML = '', 500);
 
-  }
+	}
   // ✅ Show solved words in place of jumbled area
-const workArea = document.getElementById('workArea');
-// Find a place right below the caption
-// ✅ Show solved words below caption
-// ✅ Show solved words below caption
-const captionArea = document.getElementById('captionArea');
-if (captionArea) {
-  // Remove old solved words summary if any
-  const oldSummary = document.getElementById('solvedWordsSummary');
-  if (oldSummary) oldSummary.remove();
+	const workArea = document.getElementById('workArea');
+	// Find a place right below the caption
+	// ✅ Show solved words below caption
+	// ✅ Show solved words below caption
+	const captionArea = document.getElementById('captionArea');
+	if (captionArea) {
+		// Remove old solved words summary if any
+		const oldSummary = document.getElementById('solvedWordsSummary');
+		if (oldSummary) oldSummary.remove();
 
-  // Create solved words summary
-  const solvedList = document.createElement('div');
-  solvedList.id = 'solvedWordsSummary';
-  solvedList.innerHTML = '<h3>Solved Words</h3>' + renderAllSolvedWords();
+			// Create solved words summary
+		  const solvedList = document.createElement('div');
+		  solvedList.id = 'solvedWordsSummary';
+		  solvedList.innerHTML = '<h3>Solved Words</h3>' + renderAllSolvedWords();
 
-  // Insert after captionArea
-  captionArea.insertAdjacentElement('afterend', solvedList);
-}
+		  // Insert after captionArea
+		  captionArea.insertAdjacentElement('afterend', solvedList);
+	}
 
 
     /* finalEl.textContent = finalMessage; */
@@ -443,8 +446,63 @@ if (captionArea) {
    /* document.getElementById('cartoonBox').scrollIntoView({ behavior: 'smooth', block: 'start' }); */
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  } else {
-    updateHint('Caption does not match yet.');
+	} else {
+	  captionAttempts++ ;
+// -----------------------
+		if (captionAttempts >= MAX_CAPTION_ATTEMPTS) {
+		// Show final caption anyway
+			let comments = currentSet.caption_comments || {};
+			let spaces = (currentSet.caption && currentSet.caption.spaces) || [];
+			let finalParts = [];
+
+			if (comments.pre) {
+				finalParts.push(`<span class="comment-part">${comments.pre}</span>`);
+			}
+
+			capSyllables.forEach((syll, idx) => {
+			finalParts.push(`<span class="caption-part">${syll}</span>`);
+			if (spaces.includes(idx+1)) finalParts.push('&nbsp;');
+			if (Array.isArray(comments.inter)) {
+				comments.inter
+				.filter(c => c.pos === idx + 1)
+				.forEach(c => finalParts.push(`<span class="comment-part">${c.text}</span>`));
+				}
+			});
+
+			if (comments.post) {
+				finalParts.push(`<span class="comment-part">${comments.post}</span>`);
+			}
+
+			let finalEl = document.querySelector('.final-caption');
+			if (!finalEl) {
+				finalEl = document.createElement('div');
+				finalEl.className = 'final-caption';
+				document.getElementById('captionArea').appendChild(finalEl);
+			}
+			finalEl.innerHTML = `<div>❌ Attempts over (6). Caption:</div>` + finalParts.join('');
+
+			// Hide buttons and clean HL area
+			$('#captionControls').style.display = 'none';
+			const hlArea = document.querySelector('.hlArea');
+			if (hlArea) hlArea.style.display = 'none';
+
+				// Show solved words too
+			const captionArea = document.getElementById('captionArea');
+			const solvedList = document.createElement('div');
+			solvedList.id = 'solvedWordsSummary';
+			solvedList.innerHTML = '<h3>Solved Words</h3>' + renderAllSolvedWords();
+			captionArea.insertAdjacentElement('afterend', solvedList);
+
+			showInfo("❌ Caption failed — solution revealed.");
+			captionAttempts = 0; // reset
+		} else {
+			updateHint(`Caption attempt ${captionAttempts}/${MAX_CAPTION_ATTEMPTS} failed.`);
+    }
+  
+
+		// -----------------------	  
+	  
+		// updateHint('Caption does not match yet.');
   }
 }
 
@@ -558,7 +616,6 @@ function triggerSecretPrompt() {
       });
   }
 }
-
 
 
 
