@@ -1,0 +1,82 @@
+﻿{
+"id":"d162",
+"title": "అక్షరాల అమరిక 162",
+"image": "img/C162.JPG",
+"caption": {
+"display_string":"చతుర్ముఖోపాఖ్యానం",
+"syllables":["చ","తు","ర్ము","ఖో","పా","ఖ్యా","నం"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["వి","ఖ్యా","తు","డు"],
+"meaning":"ప్రసిద్ధుడు/యశస్వి",
+"length":4,
+"hl_positions":[2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["పే","చీ","ఖో","రు"],
+"meaning":"తంటాలమారి/కలహశీలుడు",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["క్ష","పా","చ","ర"],
+"meaning":" రాక్షసుడు",
+"length":4,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["కా","ర్ము","క","ము"],
+"meaning":" విల్లు",
+"length":4,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["ప్ర","శా","స","నం"],
+"meaning":"పాలన",
+"length":4,
+"hl_positions":[4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,1,2,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,4,3,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,3,4,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[1,3,4,2]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,1,4,3]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ఆయన నిత్య అగ్నిహొత్రం, నిత్య ",
+"inter": [
+],
+"post": "  చేసే అర్చకుడు! "
+  }
+}

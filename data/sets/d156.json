@@ -1,0 +1,82 @@
+﻿{
+"id":"d156",
+"title": "అక్షరాల అమరిక 156",
+"image": "img/C156.JPG",
+"caption": {
+"display_string":"మొక్క సూటిగా",
+"syllables":["మొ","క్క","సూ","టి","గా"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["గా","టి","గుం","జ"],
+"meaning":"పశువులను కట్టుటకు పాతిన కర్ర",
+"length":4,
+"hl_positions":[1,2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["గ్ర","క్క","ద","లు"],
+"meaning":"కంపించు/ వణుకు",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ఘృ","త","సూ","ప"],
+"meaning":"నెయ్యితో కలిపిన చారు",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["మొ","న","క","త్తె"],
+"meaning":"శూరురాలు",
+"length":4,
+"hl_positions":[1]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,4,1,3]
+}
+
+
+
+
+  ],
+"reusable_syllables":["క"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ఇలాంటి సలహా మన నిజ జీవితం లోనూ వింటుంటాము!!! అలా ",
+"inter": [
+],
+"post": "  పెరగొద్దని! "
+  }
+}

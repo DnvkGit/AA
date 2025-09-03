@@ -1,0 +1,82 @@
+﻿{
+"id":"d166",
+"title": "అక్షరాల అమరిక 166",
+"image": "img/C166.JPG",
+"caption": {
+"display_string":"చారు సాంబారు",
+"syllables":["చా","రు","సాం","బా","రు"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["సాం","గ","త","ము"],
+"meaning":"అనుబంధము",
+"length":4,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["వ","రు","ట","ము"],
+"meaning":"తలుపు గడియ ",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["చా","కి","చా","న"],
+"meaning":" పల్లకి ఆట",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["చం","ద్ర","బా","ల"],
+"meaning":" వెన్నెల / పెద్దయేలకి",
+"length":4,
+"hl_positions":[3]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[1,3,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,4,2,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,1,3,2]
+}
+
+
+
+
+  ],
+"reusable_syllables":["రు"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " పాపం పిల్లలందరూ వారిని    ",
+"inter": [
+],
+"post": " అని పిలుస్తున్నారు"
+  }
+}
