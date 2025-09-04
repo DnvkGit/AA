@@ -1,0 +1,82 @@
+﻿{
+"id":"d172",
+"title": "అక్షరాల అమరిక 172",
+"image": "img/C172.JPG",
+"caption": {
+"display_string":"నిరవస్త్ర దీక్ష",
+"syllables":["ని","ర","వ","స్త్ర","దీ","క్ష"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["క్ష","వ","ధు","వు"],
+"meaning":"తుమ్ము /దగ్గు",
+"length":4,
+"hl_positions":[1,2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["శ","స్త్ర","కా","ర"],
+"meaning":"కమ్మరి /శస్త్రములు చేయువాడు",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["చే","ర","దీ","యు"],
+"meaning":"ఆశ్రయమిచ్చు",
+"length":4,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["వ","ధూ","ని","క"],
+"meaning":"వదిన",
+"length":4,
+"hl_positions":[3]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,4,3,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,3,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,1,2,3]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+],
+"post": " "
+  }
+}

@@ -1,0 +1,82 @@
+﻿{
+"id":"d175",
+"title": "అక్షరాల అమరిక 175",
+"image": "img/C175.JPG",
+"caption": {
+"display_string":"అంతులేని కథ",
+"syllables":["అం","తు","లే","ని","క","థ"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["తు","న","క","లు"],
+"meaning":"ముక్కలు",
+"length":4,
+"hl_positions":[1,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ప్రా","థ","ని","క","ము"],
+"meaning":"ఆయుధ విశేషము",
+"length":5,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["అ","ను","లే","ప"],
+"meaning":"చందనాదులు పూయుట",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["అం","ప","క","ట్టె"],
+"meaning":"బాణము",
+"length":4,
+"hl_positions":[1]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,2,3,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,3,2,5,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,2,3,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,4,1,3]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " మరైతే అది ",
+"inter": [
+],
+"post": "    -  'అంతే' కద "
+  }
+}
