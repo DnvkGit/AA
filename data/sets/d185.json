@@ -1,0 +1,84 @@
+﻿{
+"id":"d185",
+"title": "అక్షరాల అమరిక 185",
+"image": "img/C185.JPG",
+"caption": {
+"display_string":"కలహప్రియులు",
+"syllables":["క","ల","హ","ప్రి","యు","లు"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["కు","తూ","హ","ల","ము"],
+"meaning":"ఆసక్తి  /అభిరుచి",
+"length":5,
+"hl_positions":[3,4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ప","ప్రి","త","మ",""],
+"meaning":"జనులను బాగా ఆనందింపజేయువాడు",
+"length":5,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["క","డం","గ","ర","ము"],
+"meaning":"గడ్డి / పొల్లు",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ని","యు","త","ము",""],
+"meaning":"లక్ష",
+"length":5,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["సి","క","త","లు",""],
+"meaning":"ఇసుక ",
+"length":5,
+"hl_positions":[4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[5,4,3,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,3,1,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[5,1,4,3,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,4,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,4,1,3]
+    }
+  ],
+"reusable_syllables":["కు"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఆ జంట ఎల్లప్పుడూ ",
+"inter": [
+{"pos": 2, "text":" మరొకరిది "},
+{"pos": 5, "text": "రం"}
+],
+"post": "  అందులో సందేహమేమి లేదు"
+  }
+}

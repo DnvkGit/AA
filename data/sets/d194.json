@@ -1,0 +1,82 @@
+﻿{
+"id":"d194",
+"title": "అక్షరాల అమరిక 194",
+"image": "img/C194.JPG",
+"caption": {
+"display_string":"భార్యాబాధితుడు",
+"syllables":["భా","ర్యా","బా","ధి","తు","డు"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["బా","డు","చా","కి","రి"],
+"meaning":"వెట్టిపని",
+"length":5,
+"hl_positions":[1,2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["శి","రో","భా","ర","ము"],
+"meaning":"తలనొప్పి / కోపము",
+"length":5,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["గృ","హ","గో","ధి","క"],
+"meaning":"బల్లి",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ప","ర్యా","హా","ర","ము"],
+"meaning":"తూకము / కావడి ",
+"length":5,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["ధ","రా","వ","తు"],
+"meaning":"అనామతుగ ఉంచిన మొత్తము / Deposit ",
+"length":4,
+"hl_positions":[4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,5,1,3,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,2,4,3,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[5,3,2,1,4]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[5,1,4,3,2]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,2,3,1]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "తప్పకుండా అతను ",
+"inter": [
+],
+"post": " 'అందులో సందేహమేమి లేదు "
+  }
+}

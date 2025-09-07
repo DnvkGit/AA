@@ -1,0 +1,83 @@
+﻿{
+"id":"d198",
+"title": "అక్షరాల అమరిక 198",
+"image": "img/C198.JPG",
+"caption": {
+"display_string":"అకటవికటము",
+"syllables":["అ","క","ట","వి","క","ట","ము"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["అ","వి","క","ర","ము"],
+"meaning":"ప్రచారములు",
+"length":5,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["త","ట","క","పా","టు"],
+"meaning":"ఆశ్చర్యము",
+"length":5,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["వి","న","తి","ప","త్రం"],
+"meaning":"విజ్ఞాపన పత్రం",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["క","డ","వ","స","ము"],
+"meaning":"చర్మము",
+"length":5,
+"hl_positions":[5]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,2,1,4,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,1,3,2,5]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[5,4,2,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,5,1,2,3]
+}
+
+
+
+
+  ],
+"reusable_syllables":["క","ట"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఈ తారుమారు ప్రక్రియనేమంటారు? ",
+"inter": [
+
+],
+"post": "  "
+  }
+}

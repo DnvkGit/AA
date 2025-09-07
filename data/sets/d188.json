@@ -1,0 +1,84 @@
+﻿{
+"id":"d188",
+"title": "అక్షరాల అమరిక 188",
+"image": "img/C188.JPG",
+"caption": {
+"display_string":"నానాటి బతుకు నాటకము",
+"syllables":["నా","నా","టి","బ","తు","కు","నా","ట","క","ము"],
+"spaces":[3,6]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["క","నా","క","ష్ట","ము"],
+"meaning":"అతికష్టము",
+"length":5,
+"hl_positions":[2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["కూ","టి","కు","ను","కు"],
+"meaning":"మధ్యాహ్న భోజనం తరువాత తీసే చిన్న కునుకు",
+"length":5,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["క","ర్ప","ట","ము",""],
+"meaning":"వస్త్రము ",
+"length":5,
+"hl_positions":[3,4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["కా","లు","బ","ల","ము"],
+"meaning":"సేన",
+"length":5,
+"hl_positions":[3]
+},
+{
+   "word_index": 5,
+  "syllables": ["చ","తు","రి","మ",""],
+"meaning":" నేర్పరితనము",
+"length":5,
+"hl_positions":[2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[5,4,2,1,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,4,1,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,2,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,2,1,4,5]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,3,2,1]
+    }
+  ],
+"reusable_syllables":["నా"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+{"pos": 2, "text":" మరొకరిది "},
+{"pos": 5, "text": "రం"}
+],
+"post": "  "
+  }
+}

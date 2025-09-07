@@ -1,0 +1,82 @@
+﻿{
+"id":"d177",
+"title": "అక్షరాల అమరిక 177",
+"image": "img/C177.JPG",
+"caption": {
+"display_string":"అన్యోన్య దాంపత్యం",
+"syllables":["అ","న్యో","న్య","దాం","ప","త్యం"],
+"spaces":[3]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ఆ","ధి","ప","త్యం"],
+"meaning":"అధికారం…",
+"length":4,
+"hl_positions":[3,4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["దాం","తి","క","ము"],
+"meaning":"దంతముతో చేసినది",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["అ","న్య","త","మ"],
+"meaning":"మఱియొకటి",
+"length":4,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["అ","న్యో","ద","రి"],
+"meaning":"సవతితల్లి కూతురు",
+"length":4,
+"hl_positions":[2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,2,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[1,4,3,2]
+}
+
+
+
+
+  ],
+"reusable_syllables":["స"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " నిఘంటువు లో  ",
+"inter": [
+],
+"post": "  తీసేశారట!"
+  }
+}

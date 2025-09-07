@@ -1,0 +1,82 @@
+﻿{
+"id":"d195",
+"title": "అక్షరాల అమరిక 195",
+"image": "img/C195.JPG",
+"caption": {
+"display_string":"ఈ తరం అజగజాంతరం",
+"syllables":["ఈ","త","రం","అ","జ","గ","జాం","త","రం"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["చ","తు","రం","త","ము"],
+"meaning":"నాలుగు వైపులు కలది / భూమి",
+"length":5,
+"hl_positions":[3,4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["భు","జం","గ","భు","క్కు"],
+"meaning":"నెమలి",
+"length":5,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["అ","జాం","డ","ము"],
+"meaning":"బ్రహ్మండము",
+"length":4,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["మూ","ల","వి","భు","జ"],
+"meaning":"రథము / మూలములను పీకునది",
+"length":5,
+"hl_positions":[5]
+},
+{
+   "word_index": 5,
+  "syllables": ["ఈ","శా","దం","త","ము"],
+"meaning":"ఏనుఁగుదంతము",
+"length":5,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[1,4,5,3,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,1,1,5,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,3,4,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[5,2,1,3,4]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[5,1,2,4,3]
+    }
+  ],
+"reusable_syllables":["త","రం"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+],
+"post": "   "
+  }
+}
