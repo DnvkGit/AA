@@ -1,0 +1,84 @@
+﻿{
+"id":"d215",
+"title": "అక్షరాల అమరిక 215",
+"image": "img/C215.JPG",
+"caption": {
+"display_string":"మేకలెన్నీ తోకలెన్నీ",
+"syllables":["మే","క","లె","న్నీ","తో","క","లె","న్నీ"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["పా","ల","ము","న్నీ","రు"],
+"meaning":"క్షీరసాగరము",
+"length":5,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["జ","ము","న","తో","డు"],
+"meaning":"యముడు",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["పొ","లి","మే","ర"],
+"meaning":"సరిహద్దు",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["క","లె","బ","లు","కు"],
+"meaning":"కూడబలుకుకొను",
+"length":5,
+"hl_positions":[1,2]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,5,1,3,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[1,4,2,3,5]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[5,1,3,2,4]
+}
+
+
+
+
+  ],
+"reusable_syllables":["క","లె","న్నీ"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "గొల్లవాడు అడిగిన ప్రశ్న ఏమిటి?  అందులో  ",
+"inter": [
+{"pos": 4, "text":" ?  "},
+{"pos": 8, "text": "?"}
+],
+"post": "   "
+  }
+}

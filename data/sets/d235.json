@@ -1,0 +1,82 @@
+﻿{
+"id":"d235",
+"title": "అక్షరాల అమరిక 235",
+"image": "img/C235.JPG",
+"caption": {
+"display_string":"పొయ్యి పాలుకే",
+"syllables":["పొ","య్యి","పా","లు","కే"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["క","య్యి","మ","ను","డు"],
+"meaning":"కోపం, విసుగుతో అరవడం",
+"length":5,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["పం","ట","పొ","ల","ము"],
+"meaning":"పండిన పొలము",
+"length":5,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["చె","మ","ట","పా","త"],
+"meaning":"వేఁటకాఁడు డేగవ్రాలుటకు మణికట్టునకు కట్టుకొనుగుడ్డ /Gauntlet",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["కే","వ","ర్తు","డు"],
+"meaning":"జాలరి",
+"length":4,
+"hl_positions":[1]
+},
+{
+   "word_index": 5,
+  "syllables": ["గి","లి","గిం","త","లు"],
+"meaning":"చక్కిలిగింతలు",
+"length":5,
+"hl_positions":[5]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[1,4,5,3,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,4,1,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,2,5,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,4,3,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,2,3,1,5]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "పాలు పొంగడమంతా ",
+"inter": [
+],
+"post": "   "
+  }
+}

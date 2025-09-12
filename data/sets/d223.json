@@ -1,0 +1,82 @@
+﻿{
+"id":"d223",
+"title": "అక్షరాల అమరిక 223",
+"image": "img/C223.JPG",
+"caption": {
+"display_string":"ఎలా ఎదురుకొనాలో",
+"syllables":["ఎ","లా","ఎ","దు","రు","కొ","నా","లో"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["అం","క","లో","ప","ము"],
+"meaning":"తీసివేఁత ",
+"length":5,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["చీ","నా","క","ము"],
+"meaning":"కర్పూరము",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["కొ","స","రి","తిం","డి"],
+"meaning":"కోరికోరి తినుట",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["అం","గ","లా","రు","పు"],
+"meaning":"దుఃఖము",
+"length":5,
+"hl_positions":[3,4]
+},
+{
+   "word_index": 5,
+  "syllables": ["ఎ","దు","రు","కో","లు"],
+"meaning":"ఎదురేగుట",
+"length":5,
+"hl_positions":[1,2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,1,2,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,2,3,1,5]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,2,1,5,4]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[1,4,5,3,2]
+    }
+  ],
+"reusable_syllables":["ఎ"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "మొదటి బెంచి విద్యార్థులకు అన్నీ సమస్యలకు సమాధానములు తెలిసుండొచ్చు కానీ, చివరి బెంచి విద్యార్థులకు సమస్యలను ......",
+"inter": [
+],
+"post": " బాగా తెలుసు "
+  }
+}

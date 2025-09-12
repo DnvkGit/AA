@@ -1,0 +1,82 @@
+﻿{
+"id":"d222",
+"title": "అక్షరాల అమరిక 222",
+"image": "img/C222.JPG",
+"caption": {
+"display_string":"గందరగోళం",
+"syllables":["గం","ద","ర","గో","ళం"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["పా","దాం","గ","ద","ము"],
+"meaning":"నైవెద్యం పెట్టు",
+"length":5,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["సా","ర","గం","ధ","ము"],
+"meaning":"చందనము",
+"length":5,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["క","ళిం","గ","ళం"],
+"meaning":"ఆనకట్ట",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ని","ష","ద్వ","ర"],
+"meaning":"రాత్రి / రేయి",
+"length":4,
+"hl_positions":[4]
+},
+{
+   "word_index": 5,
+  "syllables": ["గో","వు","రా","యి"],
+"meaning":"పశువులు  రాచుకొనుటకు నాటిన  బండ ",
+"length":4,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[5,2,3,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,3,5,2,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,4,2,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,4,3,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,2,1,4]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఆ సినిమా మొదటి నుంచి చివర వరకూ అంతా ",
+"inter": [
+],
+"post": "  "
+  }
+}

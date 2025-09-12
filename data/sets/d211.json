@@ -1,0 +1,82 @@
+﻿{
+"id":"d211",
+"title": "అక్షరాల అమరిక 211",
+"image": "img/C211.JPG",
+"caption": {
+"display_string":"ఆషాడభూతి",
+"syllables":["ఆ","షా","డ","భూ","తి"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ప్ర","తి","పా","ద","న"],
+"meaning":" ఇౘ్చుట/ తెలుపుట / నిరూపింౘుట",
+"length":5,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["లో","క","తు","షా","ర"],
+"meaning":"కర్పూరము",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ఆ","నం","త","ర్యుఁ","డు"],
+"meaning":"ఉత్తరాధికారి",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["కా","కి","నె","ర","డ"],
+"meaning":"నల్లమబ్బు",
+"length":5,
+"hl_positions":[5]
+},
+{
+   "word_index": 5,
+  "syllables": ["భూ","రి","గ","మ","ము"],
+"meaning":"గాడిద",
+"length":5,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,2,1,5,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,5,2,1,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,4,1,2,5]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[1,5,3,4,2]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,3,1,5,2]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఈ శిష్యుడు, ఆధునిక  ",
+"inter": [
+],
+"post": "! "
+  }
+}

@@ -1,0 +1,82 @@
+﻿{
+"id":"d232",
+"title": "అక్షరాల అమరిక 232",
+"image": "img/C232.JPG",
+"caption": {
+"display_string":"అత్తాకోడలిచుక్కలు",
+"syllables":["అ","త్తా","కో","డ","లి","చు","క్క","లు"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ఉ","క్క","డ","గిం","చు"],
+"meaning":"చంపు / నాశనంచేయు",
+"length":5,
+"hl_positions":[2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["అ","ను","త్తా","ల","ము"],
+"meaning":"చెవికింపైన స్వరము",
+"length":5,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["అ","లు","క","పా","న్పు"],
+"meaning":"అలుగుట",
+"length":5,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["పొం","చు","లి","డు"],
+"meaning":"దాగు ",
+"length":4,
+"hl_positions":[2,3]
+},
+{
+   "word_index": 5,
+  "syllables": ["కో","ర","క","ము"],
+"meaning":"మొగ్గ ",
+"length":4,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,2,1,4,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,3,2,1,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[1,4,2,3,5]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,2,1,4]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,2,1,4]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఈ 'దివ్యదర్శిని' లో ",
+"inter": [
+],
+"post": " ఒకేసారి చూడవచ్చు!!!  "
+  }
+}
