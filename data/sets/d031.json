@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["క","రి","వే","ల్పు"],
+  "meaning":"కృష్ణుడు",
 "length":4,
 "hl_positions":[3]
   },
   {
    "word_index": 2,
   "syllables": ["ర","ణ","న","ము"],
+  "meaning":"ధ్వని /మ్రోత",
 "length":4,
 "hl_positions":[2]
   },
  {
    "word_index": 3,
   "syllables": ["క","రే","ణు","వు"],
+  "meaning":"ఆడేనుగు",
 "length":4,
 "hl_positions":[3,4]
   },
  {
    "word_index": 4,
   "syllables": ["లా","వా","దే","వీ"],
+  "meaning":"బేరసారాలు",
 "length":4,
 "hl_positions":[4]
     }
