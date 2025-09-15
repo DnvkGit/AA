@@ -5,30 +5,34 @@
 "caption": {
 "display_string":"సరే ఏడు",
 "syllables":["స","రే","ఏ","డు"],
-"spaces":[]
+"spaces":[2]
 },
 "words":[
   {
    "word_index": 1,
   "syllables": ["గ","డు","స","రి"],
+  "meaning": ["తెలివైనవాడు"],
 "length":4,
 "hl_positions":[2]
   },
   {
    "word_index": 2,
   "syllables": ["రా","వి","రే","క"],
+  "meaning": ["నొసటి భూషణము"],
 "length":4,
 "hl_positions":[3]
   },
  {
    "word_index": 3,
   "syllables": ["ఏ","కాం","డ","ము"],
+  "meaning": ["అఖండము"],
 "length":4,
 "hl_positions":[1]
   },
  {
    "word_index": 4,
   "syllables": ["వై","శ","స","ము"],
+  "meaning": ["హాని"],
 "length":4,
 "hl_positions":[3]
     }

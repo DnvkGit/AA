@@ -5,30 +5,34 @@
 "caption": {
 "display_string":"మంచి చెడు",
 "syllables":["మం","చి","చె","డు"],
-"spaces":[]
+"spaces":[2]
 },
 "words":[
   {
    "word_index": 1,
   "syllables": ["త","మ్మి","చె","లి"],
+  "meaning": ["సూర్యుడు"],
 "length":4,
 "hl_positions":[3]
   },
   {
    "word_index": 2,
   "syllables": ["క","ల","మం","ద"],
+  "meaning": ["మందుచెట్టు"],
 "length":4,
 "hl_positions":[3]
   },
  {
    "word_index": 3,
   "syllables": ["కృ","త","ఘ్న","డు"],
+  "meaning": ["మేలు మరచినవాడు"],
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 4,
   "syllables": ["కా","రు","చి","చ్చు"],
+  "meaning": ["దావానలము"],
 "length":4,
 "hl_positions":[3]
 }

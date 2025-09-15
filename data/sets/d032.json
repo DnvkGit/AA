@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["మ","ల్ల","కు","డు"],
+  "meaning": ["కఠినుడు"],
 "length":4,
 "hl_positions":[1,2]
   },
   {
    "word_index": 2,
   "syllables": ["వృ","షా","క","పి"],
+  "meaning": ["అగ్గి"],
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 3,
   "syllables": ["వె","ర్రి","కు","ట్టు"],
+  "meaning": ["అవివేకి"],
 "length":4,
 "hl_positions":[2]
   },
  {
    "word_index": 4,
   "syllables": ["క","త్త","ల","ము"],
+  "meaning": ["కవచము"],
 "length":4,
 "hl_positions":[3]
     }

@@ -11,24 +11,28 @@
   {
    "word_index": 1,
   "syllables": ["అ","న్త","శ","య్యా"],
+  "meaning": ["చావు / శ్మశానము"],
 "length":4,
 "hl_positions":[4]
   },
   {
    "word_index": 2,
   "syllables": ["క","ళ్ళ","జో","డు"],
+  "meaning": ["కళ్లద్దాలు"],
 "length":4,
 "hl_positions":[2]
   },
  {
    "word_index": 3,
   "syllables": ["ఒ","లి","పె","ర"],
+  "meaning": ["వానతుంపర"],
 "length":4,
 "hl_positions":[3]
   },
  {
    "word_index": 4,
   "syllables": ["ము","న్న","ర","క"],
+  "meaning": ["ధైర్యము"],
 "length":4,
 "hl_positions":[4]
 }
