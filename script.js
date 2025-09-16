@@ -24,7 +24,9 @@ async function loadSet(puzzleset) {
   const daysSince1970 = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
   // Add the offset for Excel's 1900 epoch 
   const excelT = daysSince1970 + 25569 + 1;  //to get excel Nbr for today 
-  const offset = excelT -REFDT + 1 ;  //offset to access the json & images 
+
+  const offset = (excelT -REFDT + 1 ) % 365;  //offset to access the json & images -
+  // - offset further modified to suit rollover after 365 days
   const offsetS = String(1000+offset).substring(1,4);
   filename="data/sets/d"+offsetS+".json"
   console.log("**",REFDT,excelT,offsetS,filename);
