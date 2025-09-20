@@ -1,0 +1,82 @@
+﻿{
+"id":"d240",
+"title": "అక్షరాల అమరిక 240",
+"image": "img/C240.JPG",
+"caption": {
+"display_string":"చెంగుపిల్లి",
+"syllables":["చెం","గు","పి","ల్లి"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ది","ష్టి","పి","డ","త"],
+"meaning":"నిష్ప్రయోజకుడు /  దిష్టిబొమ్మ",
+"length":5,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ప","ద్మ","గు","ణ"],
+"meaning":"లక్ష్మి ",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["చెం","త","న","జే","రు"],
+"meaning":"పక్షంతో కలియు",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["క","ర్పూ","ర","వ","ల్లి"],
+"meaning":"ఓమము ఆకు చెట్టు",
+"length":5,
+"hl_positions":[5]
+}
+
+
+
+
+
+
+
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,2,3,1,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,1,4,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,2,1,5,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,5,4,2,1]
+}
+
+
+
+
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "అందరి ముందు విక్రమసింహుడు, భార్య ముందు మాత్రము ' ",
+"inter": [
+],
+"post": " '  "
+  }
+}

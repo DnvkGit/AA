@@ -1,0 +1,83 @@
+﻿{
+"id":"d254",
+"title": "అక్షరాల అమరిక 254",
+"image": "img/C254.JPG",
+"caption": {
+"display_string":"కుక్కిన పేను చెప్పు క్రింద తేలు",
+"syllables":["కు","క్కి","న","పే","ను","చె","ప్పు","క్రిం","ద","తే","లు"],
+"spaces":[3,5,7,9]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["చీ","ర","పే","ను","లు"],
+"meaning":"కీటకములు",
+"length":5,
+"hl_positions":[3,4,5]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["క్రిం","ద","ప","ర","చు"],
+"meaning":"హీనపఱచు",
+"length":5,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["తే","న","టీ","గ","లు"],
+"meaning":"తేనెకూర్చెడి ఈగలు",
+"length":5,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["చె","క్కి","య","ము"],
+"meaning":"క్రొవ్వు",
+"length":4,
+"hl_positions":[1,2]
+},
+{
+   "word_index": 5,
+  "syllables": ["కొం","కు","ప్పు","లు"],
+"meaning":"ఎద్దుకొమ్ము కుప్పెలు",
+"length":4,
+"hl_positions":[2,3]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,1,2,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,4,1,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,5,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,2,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,1,4,3]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "పాపం ఆయన పరిస్థితి  ఇంట్లో ",
+"inter": [
+{"pos": 5, "text":" బయట "}
+],
+"post": "  ఆయన వినతి - బయట అరవొద్దని, ఇంట్లో కరిచినా ఫర్లేదట!! "
+  }
+}

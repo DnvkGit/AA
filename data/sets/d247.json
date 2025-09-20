@@ -1,0 +1,71 @@
+﻿{
+"id":"d247",
+"title": "అక్షరాల అమరిక 247",
+"image": "img/C247.JPG",
+"caption": {
+"display_string":"పంటి నొప్పి",
+"syllables":["పం","టి","నొ","ప్పి"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["త","ప్పి","కొ","ను"],
+"meaning":"ఉల్లంఘించు",
+"length":4,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["నొ","డి","కా","డు"],
+"meaning":"మాటకారి",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["త","టి","త్ప","తి"],
+"meaning":"మేఘము",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ప","రి","పం","థ","క"],
+"meaning":"తప్పు చూపువాడు / శత్రువు",
+"length":5,
+"hl_positions":[3]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,2,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[1,2,5,3,4]
+}
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+],
+"post": " వున్న వ్యక్తి తను మినహా యావత్తు ప్రపంచమంతా ఆనందిస్తున్నట్లు భావిస్తాడు‡"
+  }
+}

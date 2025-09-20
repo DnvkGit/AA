@@ -1,0 +1,82 @@
+﻿{
+"id":"d265",
+"title": "అక్షరాల అమరిక 265",
+"image": "img/C265.JPG",
+"caption": {
+"display_string":"తేమనగాడు",
+"syllables":["తే","మ","న","గా","డు"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["అ","న","గా","రు","డు"],
+"meaning":"సన్యాసి",
+"length":5,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["రా","మ","కం","ద","ము"],
+"meaning":"జమ్మిచెట్టు",
+"length":5,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["తే","ట","తె","ల్ల","ము"],
+"meaning":"మిక్కిలి స్పష్టము",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["అ","జి","న","ము"],
+"meaning":"చర్మము",
+"length":4,
+"hl_positions":[3]
+},
+{
+   "word_index": 5,
+  "syllables": ["అ","క్క","జ","ప","డు"],
+"meaning":"ఆశ్చర్యపడు",
+"length":5,
+"hl_positions":[5]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,4,1,2,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,2,1,5,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[5,3,1,4,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,4,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,5,2,1,4]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "కవి '",
+"inter": [
+],
+"post": "'   "
+  }
+}

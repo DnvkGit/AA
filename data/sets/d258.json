@@ -1,0 +1,84 @@
+﻿{
+"id":"d258",
+"title": "అక్షరాల అమరిక 258",
+"image": "img/C258.JPG",
+"caption": {
+"display_string":"చీరేస్తా కొత్తచీర",
+"syllables":["చీ","రే","స్తా","కొ","త్త","చీ","ర"],
+"spaces":[3]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["అం","త","ర","కొ","ట్టు"],
+"meaning":"తలకిందుగా నీటిలో మునుగు",
+"length":5,
+"hl_positions":[3,4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["అ","ప్రా","చీ","న","ము"],
+"meaning":" పురాతనము (తూర్పు) కానిది",
+"length":5,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["శ","క","ట","రే","ఫ"],
+"meaning":"బండిరా - 'ఱ' ",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["మ","త్త","కీ","శ","ము"],
+"meaning":"ఏనుగు",
+"length":5,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["అ","వ","స్తా","ర","ము"],
+"meaning":"తెర",
+"length":5,
+"hl_positions":[3]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,2,1,3,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,2,5,3,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,3,5,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,3,2,1,5]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,4,3,1,5]
+    }
+  ],
+"reusable_syllables":["చీ"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+{"pos": 3, "text":"  అని అతనంటే, మరి  "}
+
+],
+"post": "  ఎప్పుడు తెస్తారు?  అని ఆవిడ అడుగుతుంది. జాగ్రత్త!!!"
+  }
+}
