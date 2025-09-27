@@ -1,0 +1,82 @@
+﻿{
+"id":"d278",
+"title": "అక్షరాల అమరిక 278",
+"image": "img/C278.JPG",
+"caption": {
+"display_string":"మూడురోజుల క్రితం",
+"syllables":["మూ","డు","రో","జు","ల","క్రి","తం"],
+"spaces":[5]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["క్రి","యా","కా","రు","డు"],
+"meaning":"శివుడు",
+"length":5,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["దు","రా","గ","తం"],
+"meaning":"దౌర్జన్యంతో కూడిన  కార్యకలాపం",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["మ","ను","జు","డు"],
+"meaning":"మనుష్యుడు",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["వా","పి","రో","డు"],
+"meaning":"దైన్యమునొందు/ విలపించు",
+"length":4,
+"hl_positions":[3,4]
+},
+{
+   "word_index": 5,
+  "syllables": ["స","మూ","ల","ము"],
+"meaning":"పూర్తిగా",
+"length":4,
+"hl_positions":[2,3]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,5,4,1,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,1,4,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,3,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,1,4]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,4,3,1]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఆ టీ త్రాగిన తరువాత వాంతి చేసుకున్నాడు, ఎందుకంటే అది ",
+"inter": [
+],
+"post": "   చేసిందట!!! "
+  }
+}

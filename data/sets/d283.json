@@ -1,0 +1,82 @@
+﻿{
+"id":"d283",
+"title": "అక్షరాల అమరిక 283",
+"image": "img/C283.JPG",
+"caption": {
+"display_string":"సమయస్ఫూర్తి",
+"syllables":["స","మ","య","స్ఫూ","ర్తి"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["స","త్య","సం","ధు","డు"],
+"meaning":"నిజస్థుడు",
+"length":5,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["వి","స్ఫూ","ర్జి","త","ము"],
+"meaning":"మిక్కిలి ప్రకాశమొందినది",
+"length":5,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["మ","ధ్య","వ","ర్తి"],
+"meaning":"మధ్యస్థుఁడు",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["నూ","లు","పు","న్న","మ"],
+"meaning":"శ్రావణపూర్ణిమ",
+"length":5,
+"hl_positions":[5]
+},
+{
+   "word_index": 5,
+  "syllables": ["పం","చా","య","తి"],
+"meaning":"అయిదుగురి న్యాయ కూటమి",
+"length":4,
+"hl_positions":[3]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,2,3,5,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,1,4,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,3,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,2,1,4,5]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,1,4,3]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "అతగాడికింక వివాహ జీవితంలో తిరుగు లేదు, దీన్నే ",
+"inter": [
+],
+"post": "  అంటారు "
+  }
+}

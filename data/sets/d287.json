@@ -1,0 +1,82 @@
+﻿{
+"id":"d287",
+"title": "అక్షరాల అమరిక 287",
+"image": "img/C287.JPG",
+"caption": {
+"display_string":"తొందర పడక",
+"syllables":["తొం","ద","ర","ప","డ","క"],
+"spaces":[3]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ర","త","గు","రు","వు"],
+"meaning":"భర్త ",
+"length":5,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["అ","భ్యా","సా","ద","న"],
+"meaning":"ముట్టడి",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["తొం","ప","ర","లా","డు"],
+"meaning":"ఛిన్నాభిన్నము చేయు.",
+"length":5,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["త","డ","క","ట్టు"],
+"meaning":"అడ్డగించు ",
+"length":4,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["మ","శ","క","ము"],
+"meaning":"దోమ",
+"length":4,
+"hl_positions":[3]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,5,4,3,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,3,4,2,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,2,5,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,1,4,2]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,2,1,4]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "అనుకోకుండా చుట్టాలు వస్తే, చేసే విన్నూత్న పరిష్కారం '",
+"inter": [
+],
+"post": "' మన కాలం లో ఈ 'జుగాడ్' మామూలే  "
+  }
+}

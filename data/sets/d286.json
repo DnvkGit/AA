@@ -1,0 +1,82 @@
+﻿{
+"id":"d286",
+"title": "అక్షరాల అమరిక 286",
+"image": "img/C286.JPG",
+"caption": {
+"display_string":"జడకు ఉచ్చులు",
+"syllables":["జ","డ","కు","ఉ","చ్చు","లు"],
+"spaces":[3]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["కు","స","ల","బ","డు"],
+"meaning":"దిగులుపడు",
+"length":5,
+"hl_positions":[1]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["కా","లి","న","డ"],
+"meaning":"కాలిదారి",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ఉ","రం","గ","మ","ము"],
+"meaning":"సర్పము/ ఉరగము",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["బం","క","ము","చ్చు"],
+"meaning":"లోభి ",
+"length":4,
+"hl_positions":[4]
+},
+{
+   "word_index": 5,
+  "syllables": ["క","ణ","జ","లు"],
+"meaning":"ధాన్యముంచు పాత్రలు",
+"length":4,
+"hl_positions":[3,4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,2,5,1,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,4,1,5,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,1,4,3]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,1,4,2]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "అవి '",
+"inter": [
+],
+"post": "'   "
+  }
+}

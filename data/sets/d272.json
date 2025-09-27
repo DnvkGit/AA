@@ -1,0 +1,83 @@
+﻿{
+"id":"d272",
+"title": "అక్షరాల అమరిక 272",
+"image": "img/C272.JPG",
+"caption": {
+"display_string":"రొట్టెలవాడి ముక్కలవాడి",
+"syllables":["రొ","ట్టె","ల","వా","డి","ము","క్క","ల","వా","డి"],
+"spaces":[3,5,8]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["మ","ల","క","వా","లు"],
+"meaning":"పాదరక్ష ",
+"length":5,
+"hl_positions":[2,4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["క","ల","జ","ము","డి"],
+"meaning":"జటాజూటము",
+"length":5,
+"hl_positions":[4,5]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["పో","క","చె","క్క","లు"],
+"meaning":"వక్కచెక్కలు",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["సె","ల","క","ట్టె"],
+"meaning":"బాణము ",
+"length":4,
+"hl_positions":[4]
+},
+{
+   "word_index": 5,
+  "syllables": ["రొ","దా","ళ","ము"],
+"meaning":"ధ్వని ",
+"length":4,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,1,3,2,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,2,5,1,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,5,4,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,2,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,2,3,1]
+    }
+  ],
+"reusable_syllables":["ల","వా","డి"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "అసలు ",
+"inter": [
+{"pos": 5, "text":"  కన్నా "}
+],
+"post": "  పనే నయం "
+  }
+}
