@@ -1,0 +1,82 @@
+﻿{
+"id":"d321",
+"title": "అక్షరాల అమరిక 321",
+"image": "img/C321.JPG",
+"caption": {
+"display_string":"చెట్టుక్రింది ప్లీడరు",
+"syllables":["చె","ట్టు","క్రిం","ది","ప్లీ","డ","రు"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["క","ట్టు","ది","ట్ట","ము"],
+"meaning":"నిబంధనము/ కట్టుబాటు",
+"length":5,
+"hl_positions":[2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["అ","గ","రు","చె","క్క"],
+"meaning":"చందనపు చెక్క/ రోగము లేనిది",
+"length":5,
+"hl_positions":[3,4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ప్లీ","హో","ద","రు","డు"],
+"meaning":"ప్లీహ (spleen) రోగి",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ని","లు","క","డ"],
+"meaning":"విరామము ",
+"length":4,
+"hl_positions":[4]
+},
+{
+   "word_index": 5,
+  "syllables": ["క్రిం","చు","ద","న","ము"],
+"meaning":"నీచత్వము/  అల్పత్వము",
+"length":5,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,4,1,5,2]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[1,5,3,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,5,3,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,1,2,4]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,2,3,5,1]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఇన్నాళ్ళు పెంకు వడియాలకు  ఉపయోగపడిందంటే ఆయన,   తప్పక  ",
+"inter": [
+],
+"post": "     బాపతు కాబోలు   "
+  }
+}

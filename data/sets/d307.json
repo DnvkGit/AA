@@ -1,0 +1,82 @@
+﻿{
+"id":"d307",
+"title": "అక్షరాల అమరిక 307",
+"image": "img/C307.JPG",
+"caption": {
+"display_string":"తినవలసి వుంటుంది",
+"syllables":["తి","న","వ","ల","సి","వుం","టుం","ది"],
+"spaces":[5]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ది","వ","స","క","ర"],
+"meaning":"సూర్యుడు",
+"length":5,
+"hl_positions":[1,2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["దా","వా","న","ల"],
+"meaning":" వనములో పుట్టు అగ్ని",
+"length":4,
+"hl_positions":[3,4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["కొ","లు","వుం","డు"],
+"meaning":"సమావేశమగు",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["సి","తి","కం","ఠ","ము"],
+"meaning":"నెమలి",
+"length":5,
+"hl_positions":[1,2]
+},
+{
+   "word_index": 5,
+  "syllables": ["కు","టుం","బి","కు","డు"],
+"meaning":"కుటుంబ పోషకుడు",
+"length":5,
+"hl_positions":[2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,5,3,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,1,4,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,5,4,1,3]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,1,2,5,1]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "భార్యః చాలా ప్రమాదాలు వంటింట్లో జరుగుతాయట;  భర్తః తెలుసు వాటిలో కొన్ని మేము ",
+"inter": [
+],
+"post": "  "
+  }
+}

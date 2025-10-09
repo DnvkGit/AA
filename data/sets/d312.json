@@ -1,0 +1,83 @@
+﻿{
+"id":"d312",
+"title": "అక్షరాల అమరిక 312",
+"image": "img/C312.JPG",
+"caption": {
+"display_string":"అన్నదమ్ములు తమ్ముడు లేడు",
+"syllables":["అ","న్న","ద","మ్ము","లు","త","మ్ము","డు","లే","డు"],
+"spaces":[5]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["అ","మ్ము","డు","పో","వు"],
+"meaning":"డబ్బుకు లొంగిపోవు వెలపోవు ",
+"length":5,
+"hl_positions":[1,2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["లే","త","ఱి","క","ము"],
+"meaning":"తరుణత్వము",
+"length":5,
+"hl_positions":[1,2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["కి","స","కి","స","లు"],
+"meaning":"నవ్వినప్పుడు ధ్వని",
+"length":5,
+"hl_positions":[5]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["క","న్న","వి","టి"],
+"meaning":"అంధుడు ",
+"length":4,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["కు","రు","విం","ద"],
+"meaning":"అద్దము/ మాణిక్యవిశేషము",
+"length":4,
+"hl_positions":[4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[5,4,3,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,1,3,5,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,5,1,1,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,1,4,2]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,4,2,1]
+    }
+  ],
+"reusable_syllables":["మ్ము","డు"],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఆవలింతకు ",
+"inter": [
+{"pos": 5, "text":"  ఉన్నారు,  తుమ్ముకు "}
+],
+"post": "   "
+  }
+}
