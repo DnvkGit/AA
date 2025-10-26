@@ -1,0 +1,83 @@
+﻿{
+"id":"d338",
+"title": "అక్షరాల అమరిక 338",
+"image": "img/C338.JPG",
+"caption": {
+"display_string":"ఖాతా బదిలీ",
+"syllables":["ఖా","తా","బ","ది","లీ"],
+"spaces":[2]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["స","లీ","ల","ము"],
+"meaning":"ఉదకము",
+"length":4,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["కా","దం","బ","రి"],
+"meaning":"కావ్యము/ సరస్వతి/  మద్యము/ ",
+"length":4,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ప్ర","తా","న","ము"],
+"meaning":"తీగ / మొలక ",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ఖా","త","కు","డు"],
+"meaning":"తవ్వేవాడు/ digger",
+"length":4,
+"hl_positions":[1]
+},
+{
+   "word_index": 5,
+  "syllables": ["ఉ","ప","న","ది"],
+"meaning":"పెద్దనదిలోనికి చేరెడి చిన్ననది",
+"length":4,
+"hl_positions":[4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,1,2,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[2,3,1,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,1,3,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,3,4,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,1,4,3]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "     పెళ్ళంటే, పువ్వులమ్మే వాడి ",
+"inter": [
+{"pos": 2, "text":"  పప్పులమ్మే వాడికి   "}
+],
+"post": "  కావడం  "
+  }
+}

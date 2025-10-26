@@ -1,0 +1,82 @@
+﻿{
+"id":"d333",
+"title": "అక్షరాల అమరిక 333",
+"image": "img/C333.JPG",
+"caption": {
+"display_string":"నిధి చాల సుఖమా",
+"syllables":["ని","ధి","చా","ల","సు","ఖ","మా"],
+"spaces":[2,4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["సు","ని","భృ","త","ము"],
+"meaning":"రహస్యము ",
+"length":5,
+"hl_positions":[1,2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ఉ","ల్ల","స","మా","ట"],
+"meaning":"ఎత్తిపొడుచుట",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["జ","ల","ధి","జు","డు"],
+"meaning":"చంద్రుడు",
+"length":5,
+"hl_positions":[2,3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["చ","ల్ల","చా","రు"],
+"meaning":"మజ్జిగచారు",
+"length":4,
+"hl_positions":[3]
+},
+{
+   "word_index": 5,
+  "syllables": ["ఖ","ర","క","రు","డు"],
+"meaning":"సూర్యుడు ",
+"length":5,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,5,2,1,3]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,2,1,5,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,2,5,1,4]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,3,2,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,1,3,2,5]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "అయినా వారు ",
+"inter": [
+],
+"post": "   అని పాడుతున్నారు "
+  }
+}

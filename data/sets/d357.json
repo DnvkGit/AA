@@ -1,0 +1,82 @@
+﻿{
+"id":"d357",
+"title": "అక్షరాల అమరిక 357",
+"image": "img/C357.JPG",
+"caption": {
+"display_string":"దిష్టిపిడత",
+"syllables":["ది","ష్టి","పి","డ","త"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["వృ","షా","క","పి"],
+"meaning":"అగ్ని",
+"length":4,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ప","న్ను","గ","డ"],
+"meaning":"ఎత్తుగడ",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["క","ర","ది","వి","య"],
+"meaning":"కాగడా / దివిటీ",
+"length":5,
+"hl_positions":[3]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["త","రం","గ","ము"],
+"meaning":"అల",
+"length":4,
+"hl_positions":[1]
+},
+{
+   "word_index": 5,
+  "syllables": ["బ","ద్ధ","ము","ష్టి"],
+"meaning":"పిసినిగొట్టు",
+"length":4,
+"hl_positions":[4]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,2,4,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,4,1,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,5,1,4,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[4,2,3,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[1,4,2,3]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ఆవిడ ఇన్నాళ్ళున్న  '",
+"inter": [
+],
+"post": " '    కొత్త ఇంట్లోపల అనవసరం అనుకున్నది "
+  }
+}

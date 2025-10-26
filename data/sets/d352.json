@@ -1,0 +1,82 @@
+﻿{
+"id":"d352",
+"title": "అక్షరాల అమరిక 352",
+"image": "img/C352.JPG",
+"caption": {
+"display_string":"బాదరాయణ",
+"syllables":["బా","ద","రా","య","ణ"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["న","ఖ","వ్ర","ణ","ము"],
+"meaning":"గోరు చుట్టు",
+"length":5,
+"hl_positions":[4]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["దు","రా","లా","ప","ము"],
+"meaning":"చెడుమాట",
+"length":5,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["బా","ల","తృ","ణ","ము"],
+"meaning":"పచ్చగడ్డి",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["కూ","డు","ద","ల"],
+"meaning":"లాభము",
+"length":4,
+"hl_positions":[3]
+},
+{
+   "word_index": 5,
+  "syllables": ["మ","ల","య","క"],
+"meaning":"విహారము",
+"length":4,
+"hl_positions":[3]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[5,2,3,4,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,1,4,2,3]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[5,4,1,3,2]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,1,2]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[3,1,4,2]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "వారిది  '",
+"inter": [
+],
+"post": "'  సంబంధము    "
+  }
+}

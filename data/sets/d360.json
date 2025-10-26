@@ -1,0 +1,82 @@
+﻿{
+"id":"d360",
+"title": "అక్షరాల అమరిక 360",
+"image": "img/C360.JPG",
+"caption": {
+"display_string":"అనిర్వేదము",
+"syllables":["అ","ని","ర్వే","ద","ము"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["మం","దా","ని","ల"],
+"meaning":"మెల్లగా వీచు గాలి",
+"length":4,
+"hl_positions":[3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["కా","లా","య","స","ము"],
+"meaning":"ఆయుస్సు",
+"length":5,
+"hl_positions":[5]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["ద","వ","స","ము"],
+"meaning":"ధాన్యము ",
+"length":4,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["స","ర్వే","శు","డు"],
+"meaning":"భగవంతుఁడు",
+"length":4,
+"hl_positions":[2]
+},
+{
+   "word_index": 5,
+  "syllables": ["అ","వం","ధ్య","ము"],
+"meaning":"సఫలమైనది",
+"length":4,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[2,3,4,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[5,3,2,1,4]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,3,4,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,2,4,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,1,3,2]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "ఇటువంటి దృక్పథము అందరికి వుండాలి,  అదే   ",
+"inter": [
+],
+"post": " !!   "
+  }
+}

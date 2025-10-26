@@ -1,0 +1,82 @@
+﻿{
+"id":"d327",
+"title": "అక్షరాల అమరిక 327",
+"image": "img/C327.JPG",
+"caption": {
+"display_string":"కాలుతున్న ఫీలింగు",
+"syllables":["కా","లు","తు","న్న","ఫీ","లిం","గు"],
+"spaces":[4]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["అ","న్న","కా","వ","డి"],
+"meaning":"తిండిపోతు/ అన్నపూర్ణకావడి",
+"length":5,
+"hl_positions":[2,3]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["పి","ట్ట","క","త","లు"],
+"meaning":"ఉపాఖ్యానాలు",
+"length":5,
+"hl_positions":[5]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["తు","ఱ","గ","లిం","చు"],
+"meaning":"ప్రకాశించు / అతిశయించు ",
+"length":5,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["బ","గు","తు","డు"],
+"meaning":"దాసుడు/ భక్తుడు ",
+"length":4,
+"hl_positions":[2,3]
+},
+{
+   "word_index": 5,
+  "syllables": ["ఆ","ఫీ","న","ము"],
+"meaning":"నల్లమందు",
+"length":4,
+"hl_positions":[2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,5,4,2,1]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[4,2,1,3,5]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[4,3,2,1,5]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[2,1,4,3]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[4,2,3,1]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "అతను కాఫీ అడిగాడు,      ఆవిడిచ్చినది  '",
+"inter": [
+],
+"post": "    "
+  }
+}

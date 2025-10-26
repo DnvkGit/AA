@@ -1,0 +1,82 @@
+﻿{
+"id":"d354",
+"title": "అక్షరాల అమరిక 354",
+"image": "img/C354.JPG",
+"caption": {
+"display_string":"అతిస్పర్శుడు",
+"syllables":["అ","తి","స్ప","ర్శు","డు"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["ఖ","ర","క","రు","డు"],
+"meaning":"సూర్యుడు ",
+"length":5,
+"hl_positions":[5]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ప","ర్శు","పా","ణి"],
+"meaning":"పరశురాముడు",
+"length":4,
+"hl_positions":[2]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["బ","హు","మ","తి"],
+"meaning":"పారితోషికము/ సమ్మానము ",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["బృ","హ","స్ప","తి"],
+"meaning":"సురగురువు",
+"length":4,
+"hl_positions":[3]
+},
+{
+   "word_index": 5,
+  "syllables": ["అ","లం","క","ర్త"],
+"meaning":"అలంకరించువాడు",
+"length":4,
+"hl_positions":[1]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[3,5,2,1,4]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,2,4,1]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[3,4,2,1]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,4,2,1]
+},
+  {
+   "word_index": 5,
+  "jumble_seq":[2,3,1,4]
+    }
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": " ",
+"inter": [
+],
+"post": "    "
+  }
+}

@@ -1,0 +1,72 @@
+﻿{
+"id":"d348",
+"title": "అక్షరాల అమరిక 348",
+"image": "img/C348.JPG",
+"caption": {
+"display_string":"వైతరణి ",
+"syllables":["వై","త","ర","ణి"],
+"spaces":[]
+},
+"words":[
+  {
+   "word_index": 1,
+  "syllables": ["పా","ణి","రు","హ","ము"],
+"meaning":"గోరు ",
+"length":5,
+"hl_positions":[2]
+  },
+  {
+   "word_index": 2,
+  "syllables": ["ని","ష","ద్వ","ర"],
+"meaning":"రేయి / రాత్రి",
+"length":4,
+"hl_positions":[4]
+  },
+ {
+   "word_index": 3,
+  "syllables": ["వై","తా","ళి","కు","డు"],
+"meaning":"మేలుకొలుపువాడు",
+"length":5,
+"hl_positions":[1]
+  },
+ {
+   "word_index": 4,
+  "syllables": ["ఖ","త","ల","ము"],
+"meaning":"ఆకాశము ",
+"length":4,
+"hl_positions":[2]
+}
+
+  ],
+  "jumbles": [
+    {
+   "word_index": 1,
+  "jumble_seq":[4,3,2,1,5]
+    },
+    {
+   "word_index": 2,
+  "jumble_seq":[3,1,4,2]
+    },
+    {
+   "word_index": 3,
+  "jumble_seq":[2,4,5,1,3]
+    },
+    {
+   "word_index": 4,
+  "jumble_seq":[3,2,4,1]
+}
+  ],
+"reusable_syllables":[],
+  "meta": {
+    "total_words":5,
+    "max_word_length": 4,
+    "sno": 1
+  },
+"caption_comments": {
+"pre": "యమధర్మరాజు గారు   ",
+"inter": [
+{"pos": 1, "text":" '(వే')' "}
+],
+"post": " త్రోవ మరచినట్టున్నారు   "
+  }
+}
