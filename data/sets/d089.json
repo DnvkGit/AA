@@ -18,21 +18,21 @@
   {
    "word_index": 2,
   "syllables": ["నా","య","క","త్వం"],
-"meaning":"",
+"meaning":"నేతృత్వము",
 "length":4,
 "hl_positions":[4]
   },
  {
    "word_index": 3,
   "syllables": ["మే","ఖ","ల","ము"],
-"meaning":"",
+"meaning":"నర్మదానదీతీర దేశము",
 "length":4,
 "hl_positions":[2,3]
   },
  {
    "word_index": 4,
   "syllables": ["వి","ధా","తృ","డు"],
-"meaning":"",
+"meaning":"బ్రహ్మ",
 "length":4,
 "hl_positions":[1]
 }
@@ -81,4 +81,5 @@
 "post": "  "
   }
 }
+
 
