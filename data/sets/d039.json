@@ -5,7 +5,7 @@
 "caption": {
 "display_string":"సీమా చీమా ఛీమా",
 "syllables":["సీ","మా","చీ","మా","ఛీ","మా"],
-"spaces":[]
+"spaces":[2,4]
 },
 "words":[
   {
@@ -81,3 +81,4 @@
 "post": " "
   }
 }
+
