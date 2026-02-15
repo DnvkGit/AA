@@ -17,9 +17,9 @@
   },
   {
    "word_index": 2,
-  "syllables": ["ప","ప్రి","త","మ",""],
+  "syllables": ["ప","ప్రి","త","మ"],
 "meaning":"జనులను బాగా ఆనందింపజేయువాడు",
-"length":5,
+"length":4,
 "hl_positions":[2]
   },
  {
@@ -31,16 +31,16 @@
   },
  {
    "word_index": 4,
-  "syllables": ["ని","యు","త","ము",""],
+  "syllables": ["ని","యు","త","ము"],
 "meaning":"లక్ష",
-"length":5,
+"length":4,
 "hl_positions":[2]
 },
 {
    "word_index": 5,
-  "syllables": ["సి","క","త","లు",""],
+  "syllables": ["సి","క","త","లు"],
 "meaning":"ఇసుక ",
-"length":5,
+"length":4,
 "hl_positions":[4]
 }
 
@@ -82,3 +82,4 @@
 "post": "  అందులో సందేహమేమి లేదు"
   }
 }
+
