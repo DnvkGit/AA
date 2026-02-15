@@ -513,7 +513,7 @@ function showInfo(s){ $('#info').textContent = s; }
 function showCongrats(){
   const popup = $('#congratsPopup');
   popup.style.display = 'flex';
-  setTimeout(()=> popup.style.display = 'none', 2000);
+  setTimeout(()=> popup.style.display = 'none', 2500);
 }
 
 function showJCongrats(){
