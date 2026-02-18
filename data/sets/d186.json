@@ -31,16 +31,16 @@
   },
  {
    "word_index": 4,
-  "syllables": ["ప","న్ను","గ","డ",""],
+  "syllables": ["ప","న్ను","గ","డ"],
 "meaning":"ఎత్తుగడ / యుక్తి",
-"length":5,
+"length":4,
 "hl_positions":[2]
 },
 {
    "word_index": 5,
-  "syllables": ["ర","ట్టు","కె","క్కు",""],
+  "syllables": ["ర","ట్టు","కె","క్కు"],
 "meaning":"అల్లరిచేయు ",
-"length":5,
+"length":4,
 "hl_positions":[2,3]
 }
 
@@ -82,3 +82,4 @@
 "post": "  అనే వైద్యము నమ్మే ఆవిడ పాపం"
   }
 }
+
