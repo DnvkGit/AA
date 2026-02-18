@@ -24,9 +24,9 @@
   },
  {
    "word_index": 3,
-  "syllables": ["క","ర్ప","ట","ము",""],
+  "syllables": ["క","ర్ప","ట","ము"],
 "meaning":"వస్త్రము ",
-"length":5,
+"length":4,
 "hl_positions":[3,4]
   },
  {
@@ -38,9 +38,9 @@
 },
 {
    "word_index": 5,
-  "syllables": ["చ","తు","రి","మ",""],
+  "syllables": ["చ","తు","రి","మ"],
 "meaning":" నేర్పరితనము",
-"length":5,
+"length":4,
 "hl_positions":[2]
 }
 
@@ -76,9 +76,10 @@
 "caption_comments": {
 "pre": " ",
 "inter": [
-{"pos": 2, "text":" మరొకరిది "},
-{"pos": 5, "text": "రం"}
+{"pos": 2, "text":""},
+{"pos": 5, "text": ""}
 ],
 "post": "  "
   }
 }
+
