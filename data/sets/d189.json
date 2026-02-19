@@ -10,9 +10,9 @@
 "words":[
   {
    "word_index": 1,
-  "syllables": ["స","మ","వే","త",""],
+  "syllables": ["స","మ","వే","త"],
 "meaning":"సమూహంతో కలిసి వున్నది",
-"length":5,
+"length":4,
 "hl_positions":[3]
   },
   {
@@ -76,9 +76,8 @@
 "caption_comments": {
 "pre": " ఆ పిల్లవాడు ",
 "inter": [
-{"pos": 2, "text":" మరొకరిది "},
-{"pos": 5, "text": "రం"}
-],
+{"pos": 2, "text":""}],
 "post": "  అవుతాడు నిస్సందేహముగా"
   }
 }
+
